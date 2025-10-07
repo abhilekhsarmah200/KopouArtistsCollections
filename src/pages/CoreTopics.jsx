@@ -5,7 +5,7 @@ export default function CoreTopics() {
   return (
     <div id='future-goals' className='relative sm:px-8 px-4 z-10 h-full py-10'>
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('/Banner7.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-40"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806176/KopouArtistsCollectionsIcon/gb2xna6izzq6hhgwmo89.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-40"
         style={{
           backgroundAttachment: 'fixed',
         }}

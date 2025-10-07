@@ -33,10 +33,10 @@ export default function Document() {
         />
 
         {/* ✅ Open Graph / Social Preview */}
-        <meta property='og:title' content='My Next.js App' />
+        <meta property='og:title' content='Kopou Artist Collective' />
         <meta
           property='og:description'
-          content='Built with Next.js and Tailwind CSS.'
+          content='Celebrating Artists, Culture & Collaboration'
         />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://yourdomain.com' />

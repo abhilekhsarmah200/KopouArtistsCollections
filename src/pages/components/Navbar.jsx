@@ -95,8 +95,9 @@ export default function Navbar() {
               <div className='flex shrink-0 items-center'>
                 <a href='/'>
                   <img
-                    src='/kopou.png'
-                    alt='Your Company'
+                    src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806169/KopouArtistsCollectionsIcon/uwnqnq8ocmp9bwsoe0zu.png'
+                    alt='Kopou Artist Collective'
+                    title='Kopou Artist Collective'
                     className='cursor-pointer h-10 w-auto sm:h-12'
                   />
                 </a>

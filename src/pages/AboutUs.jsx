@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <div id='about' className='relative sm:px-8 px-4 z-10 h-full py-10'>
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('/Banner4.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806173/KopouArtistsCollectionsIcon/w5kafzjs7advp4ci3nna.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"
         style={{
           backgroundAttachment: 'fixed',
         }}

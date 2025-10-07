@@ -9,7 +9,7 @@ export default function HomePage() {
     >
       {/* Background with opacity */}
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('/Banner.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806135/KopouArtistsCollectionsIcon/sjr0zacz2x6tirqowboh.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"
         style={{
           backgroundAttachment: 'fixed',
         }}

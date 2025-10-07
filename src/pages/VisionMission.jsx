@@ -8,7 +8,7 @@ export default function VisionMission() {
       className='relative sm:px-8 px-4 z-10 h-full py-10'
     >
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('/Banner3.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806182/KopouArtistsCollectionsIcon/izxspes2brnuptbi64ea.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"
         style={{
           backgroundAttachment: 'fixed',
         }}

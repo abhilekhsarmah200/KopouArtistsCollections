@@ -5,6 +5,7 @@ import Benefits from './Benefits';
 import FutureGoals from './FutureGoals';
 import CoreTopics from './CoreTopics';
 import AboutUs from './AboutUs';
+import WordsFromFounder from './WordsFromFounder';
 
 export default function index() {
   return (
@@ -15,6 +16,7 @@ export default function index() {
       <CoreTopics />
       <FutureGoals />
       <AboutUs />
+      <WordsFromFounder />
     </div>
   );
 }

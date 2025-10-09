@@ -3,7 +3,7 @@ import { Facebook, Instagram, X, Linkedin, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className='bg-gray-900 text-gray-300 py-10 mt-10'>
+    <footer className='bg-gray-900 text-gray-300 py-10'>
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
           {/* Left Section */}

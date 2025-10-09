@@ -4,12 +4,7 @@ import React from 'react';
 export default function AboutUs() {
   return (
     <div id='about' className='relative sm:px-8 px-4 z-10 h-full py-10'>
-      <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806173/KopouArtistsCollectionsIcon/w5kafzjs7advp4ci3nna.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"
-        style={{
-          backgroundAttachment: 'fixed',
-        }}
-      ></div>
+      <div className="absolute bg-contain sm:bg-fixed inset-0 sm:bg-no-repeat bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759974615/KopouArtistsCollectionsIcon/fdqfd6k5mzh6xxw4ayfo.png')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806173/KopouArtistsCollectionsIcon/w5kafzjs7advp4ci3nna.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h1
           className='text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
@@ -21,7 +16,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         <div className='text-black text-left md:text-justify overflow-hidden'>
           <div className='sm:float-right flex justify-center md:ml-8 ml-4 md:mb-6 mb-4 md:mt-2'>
             <img
-              src='/icon2.png'
+              src='/icon3.png'
               className='md:h-[18rem] bg-white rounded-full sm:h-[12rem] h-[8rem] md:w-[18rem] sm:w-[12rem] w-[8rem] object-cover shadow-lg'
               alt='Kopou Artist Collective'
             />
@@ -55,7 +50,10 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
           </p>
         </div>
       </div>
-      <KeyboardMusic className='lg:h-20 sm:h-16 h-8 absolute sm:top-5 top-3 sm:left-5 left-2 lg:w-20 sm:w-16 w-8 transform hover:scale-130 hover:rotate-25 transition-all duration-500 ease-in-out cursor-pointer text-[#c23c23] [filter:drop-shadow(0_0_2px_white)_drop-shadow(0_0_1px_white)] hover:[filter:drop-shadow(0_0_4px_white)_drop-shadow(0_0_2px_white)]' />
+      <img
+        src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759822519/KopouArtistsCollectionsIcon/l0s00nvxmpef6uhd6qqd.png`}
+        className='lg:h-14 sm:h-10 h-8 absolute sm:top-5 top-3 sm:left-5 left-2 transform rotate-12 text-[#c23c23]'
+      />
     </div>
   );
 }

@@ -14,43 +14,47 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
           Future Goals
         </h1>
         <ul
-          className='sm:px-8 px-4 list-decimal text-sm md:text-xl lg:text-2xl text-left text-black
+          className='sm:px-8 px-2 text-sm md:text-xl lg:text-2xl text-left text-black
         [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]'
         >
           <li>
-            Support More Artists Kopou aims to help more talented artists from
-            different fields — music, art, design, film, and performance — by
-            giving them a platform to grow and shine.
+            <b className='text-[#c23c23]'>Support More Artists:</b> Kopou aims
+            to help more talented artists from different fields — music, art,
+            design, film, and performance — by giving them a platform to grow
+            and shine.
           </li>
           <li>
-            Create Big Projects In the future, Kopou wants to produce more music
-            videos, art shows, digital campaigns, and creative collaborations
-            that reach bigger audiences.
+            <b className='text-[#c23c23]'>Create Big Projects:</b> In the
+            future, Kopou wants to produce more music videos, art shows, digital
+            campaigns, and creative collaborations that reach bigger audiences.
           </li>
           <li>
-            Build a Creative Space Kopou dreams of having its own studio or
-            creative hub where artists can come together, work, practice, and
-            share ideas freely.
+            <b className='text-[#c23c23]'>Build a Creative Space:</b> Kopou
+            dreams of having its own studio or creative hub where artists can
+            come together, work, practice, and share ideas freely.
           </li>
           <li>
-            Collaborate with Brands The collective plans to work with brands,
-            companies, and organizations to create creative campaigns that
-            benefit both the artists and the partners.
+            <b className='text-[#c23c23]'>Collaborate with Brands:</b> The
+            collective plans to work with brands, companies, and organizations
+            to create creative campaigns that benefit both the artists and the
+            partners.
           </li>
           <li>
-            Promote Northeast Art & Culture Kopou wants to take Assamese and
-            Northeast art, music, and culture to national and international
-            levels, showing the world the region’s creativity.
+            <b className='text-[#c23c23]'>Promote Northeast Art & Culture:</b>{' '}
+            Kopou wants to take Assamese and Northeast art, music, and culture
+            to national and international levels, showing the world the region’s
+            creativity.
           </li>
           <li>
-            Train Young Artists In the coming years, Kopou plans to start
-            workshops, training programs, and internships to guide young talents
-            and prepare them for the professional creative world.
+            <b className='text-[#c23c23]'>Train Young Artists:</b> In the coming
+            years, Kopou plans to start workshops, training programs, and
+            internships to guide young talents and prepare them for the
+            professional creative world.
           </li>
           <li>
-            Grow as a Strong Community Kopou’s main goal is to build a strong,
-            united community of artists who support each other and keep
-            creativity alive for the long term.
+            <b className='text-[#c23c23]'>Grow as a Strong Community:</b>{' '}
+            Kopou’s main goal is to build a strong, united community of artists
+            who support each other and keep creativity alive for the long term.
           </li>
         </ul>
       </div>

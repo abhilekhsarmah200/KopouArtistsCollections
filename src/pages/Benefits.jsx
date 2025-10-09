@@ -14,39 +14,42 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
           Benefits for Artists
         </h1>
         <ul
-          className=' list-item sm:px-8 px-4 text-sm md:text-xl lg:text-2xl text-left text-black
+          className=' list-item sm:px-8 px-2 text-sm md:text-xl lg:text-2xl text-left text-black
         [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]'
         >
           <li>
-            <b>More Exposure:</b> Artists get a platform to show their talent
-            through social media, events, and collaborations — helping them
-            reach a bigger audience and get noticed.
+            <b className='text-[#c23c23]'>More Exposure:</b> Artists get a
+            platform to show their talent through social media, events, and
+            collaborations — helping them reach a bigger audience and get
+            noticed.
           </li>
           <li>
-            <b>Creative Collaboration:</b> Artists can work with other singers,
-            designers, photographers, and filmmakers to create exciting new
-            projects together. It helps them learn from each other and explore
-            new styles.
+            <b className='text-[#c23c23]'>Creative Collaboration:</b> Artists
+            can work with other singers, designers, photographers, and
+            filmmakers to create exciting new projects together. It helps them
+            learn from each other and explore new styles.
           </li>
           <li>
-            <b>Professional Growth:</b> Kopou helps artists understand how the
-            creative industry works — from branding to promotion — so they can
-            build a strong professional image and career.
+            <b className='text-[#c23c23]'>Professional Growth:</b> Kopou helps
+            artists understand how the creative industry works — from branding
+            to promotion — so they can build a strong professional image and
+            career.
           </li>
           <li>
-            <b>Networking & Connections:</b> Through Kopou, artists can meet
-            people from different creative fields, brands, and event organizers
-            — opening doors for future work and partnerships.
+            <b className='text-[#c23c23]'>Networking & Connections:</b> Through
+            Kopou, artists can meet people from different creative fields,
+            brands, and event organizers — opening doors for future work and
+            partnerships.
           </li>
           <li>
-            <b>Earning Possibilities:</b> By joining campaigns, performances,
-            and collaborations, artists can earn from their talent and get
-            chances for sponsored or paid projects.
+            <b className='text-[#c23c23]'>Earning Possibilities:</b> By joining
+            campaigns, performances, and collaborations, artists can earn from
+            their talent and get chances for sponsored or paid projects.
           </li>
           <li>
-            <b>Supportive Community:</b> Kopou is like a creative family —
-            artists support each other, share ideas, and grow together in a
-            positive and inspiring environment.
+            <b className='text-[#c23c23]'>Supportive Community:</b> Kopou is
+            like a creative family — artists support each other, share ideas,
+            and grow together in a positive and inspiring environment.
           </li>
         </ul>
       </div>

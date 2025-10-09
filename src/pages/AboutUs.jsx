@@ -22,7 +22,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
             />
           </div>
           <p
-            className='text-sm md:text-xl lg:text-2xl
+            className='sm:px-8 px-2 text-sm md:text-xl lg:text-2xl
     [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]'
           >
             Kopou Artist Collective is a creative community built to bring

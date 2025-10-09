@@ -1,3 +1,4 @@
+import { User } from 'lucide-react';
 import React, { useState } from 'react';
 
 export default function Navbar() {
@@ -127,7 +128,7 @@ export default function Navbar() {
             <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:ml-6 sm:pr-0 z-20'>
               <button
                 type='button'
-                className='relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-gray-500 cursor-pointer transition-colors duration-200'
+                className='relative rounded-full p-1 text-gray-500 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-gray-500 cursor-pointer transition-colors duration-200'
               >
                 <span className='sr-only'>View notifications</span>
                 <svg
@@ -144,11 +145,12 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-              <img
+              {/* <img
                 src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
                 alt='User avatar'
                 className='size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10 ml-3'
-              />
+              /> */}
+              <User className='h-8 w-8 rounded-full border p-1 text-gray-500 hover:text-white cursor-pointer' />
             </div>
           </div>
         </div>

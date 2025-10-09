@@ -71,7 +71,7 @@ export default function WordsFromFounder({ data }) {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className='hidden md:absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] p-2 md:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110'
+          className='hidden md:block cursor-pointer absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] p-2 md:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110'
           aria-label='Previous quote'
         >
           <svg
@@ -91,7 +91,7 @@ export default function WordsFromFounder({ data }) {
 
         <button
           onClick={nextSlide}
-          className='hidden md:absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] p-2 md:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110'
+          className='hidden md:block cursor-pointer absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] p-2 md:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110'
           aria-label='Next quote'
         >
           <svg
@@ -115,7 +115,7 @@ export default function WordsFromFounder({ data }) {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-3 h-3 cursor-pointer rounded-full transition-all duration-300 ${
                 index === currentSlide
                   ? 'bg-[#c23c23] scale-125'
                   : 'bg-gray-400 hover:bg-gray-600'

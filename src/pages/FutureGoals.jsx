@@ -4,7 +4,7 @@ import React from 'react';
 export default function FutureGoals() {
   return (
     <div id='future-goals' className='relative sm:px-8 px-4 z-10 h-full py-10'>
-      <div className="absolute bg-contain sm:bg-fixed inset-0 sm:bg-no-repeat bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759974614/KopouArtistsCollectionsIcon/i7mlxigkhigh960shs8s.png')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806170/KopouArtistsCollectionsIcon/odqdxig2inufh8hb4jkq.png')] sm:bg-cover md:bg-cover lg:bg-cover opacity-50"></div>
+      <div className="absolute inset-0 sm:bg-fixed bg-contain bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759974614/KopouArtistsCollectionsIcon/i7mlxigkhigh960shs8s.png')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759806170/KopouArtistsCollectionsIcon/odqdxig2inufh8hb4jkq.png')] opacity-50"></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h1
           className='text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 

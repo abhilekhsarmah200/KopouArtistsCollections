@@ -27,7 +27,7 @@ export default function WordsFromFounder() {
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
 drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
-          Words From the Founder
+          Words From the Founders
           <img
             src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759920322/KopouArtistsCollectionsIcon/k4i9fg8gbftcjjobw4fj.png`}
             className='lg:h-20 sm:h-16 h-10 transform rotate-12 text-[#c23c23]'

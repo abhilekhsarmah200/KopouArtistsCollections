@@ -1,7 +1,23 @@
 import React, { useState } from 'react';
-import { Guitar, MicVocal, KeyboardMusic } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
 
 export default function HomePage() {
+  const handleLinkClick = (linkLabel, sectionId) => {
+    // Smooth scroll to section with offset for fixed navbar
+    if (sectionId) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offset = 80; // Adjust this value based on your navbar height
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
   return (
     <div
       id='home'
@@ -25,6 +41,12 @@ export default function HomePage() {
         >
           Celebrating Artists, Culture & Collaboration
         </p>
+        <button
+          onClick={() => handleLinkClick('Vision & Mission', 'vision-mission')}
+          className='text-[0.5rem] md:text-base lg:text-[1.2rem] transition-all duration-300 hover:-translate-y-2 cursor-pointer flex md:gap-2 mt-8 bg-white border border-[#c23c23] hover:border-[#c23c23]/70 text-[#c23c23] hover:text-[#c23c23]/70 py-2 px-4 rounded-xl'
+        >
+          Explore More <MoveRight className='h-3 md:h-auto' />
+        </button>
       </div>
       <div>
         <img
@@ -34,6 +56,10 @@ export default function HomePage() {
         <img
           src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759822519/KopouArtistsCollectionsIcon/l0s00nvxmpef6uhd6qqd.png`}
           className='lg:h-32 sm:h-24 h-18 absolute top-20 right-5 transform hover:scale-130 rotate-12 hover:rotate-25 transition-all duration-500 ease-in-out cursor-pointer text-[#c23c23] [filter:drop-shadow(0_0_2px_white)_drop-shadow(0_0_1px_white)] hover:[filter:drop-shadow(0_0_4px_white)_drop-shadow(0_0_2px_white)]'
+        />
+        <img
+          src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1760159488/KopouArtistsCollectionsIcon/Webp/zgx6po0fjfhtylxfjdga.png`}
+          className='lg:h-42 sm:h-32 h-22 absolute bottom-20 left-5 transform hover:scale-130 rotate-12 hover:rotate-25 transition-all duration-500 ease-in-out cursor-pointer text-[#c23c23] [filter:drop-shadow(0_0_2px_white)_drop-shadow(0_0_1px_white)] hover:[filter:drop-shadow(0_0_4px_white)_drop-shadow(0_0_2px_white)]'
         />
         <img
           src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759920322/KopouArtistsCollectionsIcon/k4i9fg8gbftcjjobw4fj.png`}

@@ -12,7 +12,7 @@ export default function Document() {
         />
         <meta
           name='keywords'
-          content='Next.js, React, Web Development, SEO, TailwindCSS'
+          content='Kopou, Kopou Artists, Kapou, Kopou Phul, Kopou Artists Collective'
         />
         <meta name='author' content='Your Name' />
         <meta name='theme-color' content='#0ea5e9' />
@@ -40,7 +40,10 @@ export default function Document() {
         />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://yourdomain.com' />
-        <meta property='og:image' content='/og-image.png' />
+        <meta
+          property='og:image'
+          content='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760001360/KopouArtistsCollectionsIcon/Webp/znosqhncgjhvghdgfxij.webp'
+        />
       </Head>
       <body>
         <Main />

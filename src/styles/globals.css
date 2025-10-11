@@ -10,6 +10,24 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom screen sizes for different devices */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2560px;
+
+  /* Device-specific custom properties */
+  --device-mobile: 640px;
+  --device-tablet: 768px;
+  --device-laptop: 1024px;
+  --device-desktop: 1280px;
+  --device-large-desktop: 1536px;
+  --device-2k: 2560px;
+  --device-4k: 3840px;
 }
 
 nextjs-portal {

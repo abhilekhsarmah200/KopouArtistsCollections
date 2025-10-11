@@ -140,20 +140,22 @@ export default function Carousel({ data, component }) {
         </button>
 
         {/* Dots Indicator */}
-        <div className='flex justify-center mt-8 space-x-3'>
-          {data?.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`w-3 h-3 cursor-pointer rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? 'bg-[#c23c23] scale-125'
-                  : 'bg-gray-400 hover:bg-gray-600'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
+        {component !== 'bulletin' && (
+          <div className='flex justify-center mt-8 space-x-3'>
+            {data?.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-3 h-3 cursor-pointer rounded-full transition-all duration-300 ${
+                  index === currentSlide
+                    ? 'bg-[#c23c23] scale-125'
+                    : 'bg-gray-400 hover:bg-gray-600'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -5,16 +5,17 @@ export default function Document() {
   return (
     <Html lang='en' data-theme='light'>
       <Head>
+        <title>Kopou | Artists Collective</title>
         {/* ✅ Basic SEO */}
         <meta
           name='description'
-          content='A modern Next.js web application with enhanced performance and design.'
+          content='Celebrating Artists, Culture & Collaboration'
         />
         <meta
           name='keywords'
           content='Kopou, Kopou Artists, Kapou, Kopou Phul, Kopou Artists Collective'
         />
-        <meta name='author' content='Your Name' />
+        <meta name='author' content='Abhilekh Sarmah' />
         <meta name='theme-color' content='#0ea5e9' />
 
         {/* ✅ Favicon and App Icons */}
@@ -42,7 +43,7 @@ export default function Document() {
         <meta property='og:url' content='https://yourdomain.com' />
         <meta
           property='og:image'
-          content='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760001360/KopouArtistsCollectionsIcon/Webp/znosqhncgjhvghdgfxij.webp'
+          content='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
         />
       </Head>
       <body>

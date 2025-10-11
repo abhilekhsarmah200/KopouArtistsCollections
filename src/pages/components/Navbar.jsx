@@ -1,7 +1,7 @@
 import { User } from 'lucide-react';
 import React, { useState } from 'react';
 
-export default function Navbar() {
+export default function Navbar({ data }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('Home');
 
@@ -39,15 +39,15 @@ export default function Navbar() {
       : 'rounded-md md:px-3 px-2 py-2 text-sm md:font-medium transition-all duration-200 ease-in-out cursor-pointer';
 
     if (isActive) {
-      return `${baseClasses} bg-gray-950/50 text-white shadow-lg shadow-gray-600/25`;
+      return `${baseClasses} bg-[#c23c23] text-white shadow-lg shadow-gray-600/25`;
     } else {
-      return `${baseClasses} text-gray-300 hover:bg-white/10 hover:text-white`;
+      return `${baseClasses} w-full sm:w-auto text-left text-[#c23c23] hover:bg-white/10 hover:text-[#c23c23]/50`;
     }
   };
 
   return (
     <div className='fixed top-0 left-0 right-0 z-50'>
-      <nav className='relative bg-gray-800/50 backdrop-blur-sm after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10'>
+      <nav className='relative bg-transparent backdrop-blur-sm after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10'>
         <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
           <div className='relative flex sm:h-[6rem] h-[5rem] items-center justify-between'>
             {/* Mobile menu button */}
@@ -55,7 +55,7 @@ export default function Navbar() {
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 type='button'
-                className='relative cursor-pointer inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-gray-500 transition-colors duration-200'
+                className='relative cursor-pointer inline-flex items-center justify-center rounded-md p-2 text-[#c23c23] hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-[#c23c23] transition-colors duration-200'
                 aria-expanded={menuOpen}
               >
                 <span className='sr-only'>Open main menu</span>
@@ -125,39 +125,41 @@ export default function Navbar() {
             </div>
 
             {/* Right-side user profile */}
-            <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:ml-6 sm:pr-0 z-20'>
-              <button
-                type='button'
-                className='relative rounded-full p-1 text-gray-500 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-gray-500 cursor-pointer transition-colors duration-200'
-              >
-                <span className='sr-only'>View notifications</span>
-                <svg
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth='1.5'
-                  className='w-6 h-6'
+            {data && (
+              <div className='absolute inset-y-0 right-0 flex gap-2 items-center pr-2 sm:static sm:ml-6 sm:pr-0 z-20'>
+                <button
+                  type='button'
+                  className='relative rounded-full p-1 text-[#c23c23] hover:text-[#c23c23]/50 focus:outline-2 focus:outline-offset-2 focus:outline-gray-500 cursor-pointer transition-colors duration-200'
                 >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0'
-                  />
-                </svg>
-              </button>
-              {/* <img
+                  <span className='sr-only'>View notifications</span>
+                  <svg
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='1.5'
+                    className='w-6 h-6'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0'
+                    />
+                  </svg>
+                </button>
+                {/* <img
                 src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
                 alt='User avatar'
                 className='size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10 ml-3'
               /> */}
-              <User className='h-8 w-8 rounded-full border p-1 text-gray-500 hover:text-white cursor-pointer' />
-            </div>
+                <User className='h-8 w-8 rounded-full border p-[0.4rem] text-[#c23c23] hover:text-[#c23c23]/50 cursor-pointer' />
+              </div>
+            )}
           </div>
         </div>
 
         {/* Mobile menu dropdown */}
         {menuOpen && (
-          <div className='sm:hidden absolute top-full left-0 right-0 z-10 bg-gray-800/95 backdrop-blur-sm px-2 pt-2 pb-3 space-y-1 border-t border-white/10'>
+          <div className='sm:hidden absolute top-full left-0 right-0 z-10 bg-white/90 shadow-2xl backdrop-blur-sm px-2 pt-2 pb-3 space-y-1 border-t border-white/10'>
             {navLinks.map((link) => (
               <button
                 key={link.id}

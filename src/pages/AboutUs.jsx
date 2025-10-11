@@ -4,16 +4,16 @@ import React from 'react';
 export default function AboutUs() {
   return (
     <div id='about' className='relative sm:px-8 px-4 z-10 h-full py-10'>
-      <div className="absolute inset-0 sm:bg-fixed bg-contain bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1759974615/KopouArtistsCollectionsIcon/fdqfd6k5mzh6xxw4ayfo.png')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760001361/KopouArtistsCollectionsIcon/Webp/cmwao75jjyuamk4wtmrv.webp')] opacity-50"></div>
+      <div className="absolute inset-0 bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152582/KopouArtistsCollectionsIcon/Webp/phzrrzfpiwtwdwg4eaxe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760148729/KopouArtistsCollectionsIcon/Webp/Banner5.webp')] opacity-60"></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h1
-          className='text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
+          className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
 drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
           About Us
         </h1>
-        <div className='text-black text-left md:text-justify overflow-hidden'>
+        <div className='text-black bg-white rounded-xl p-8 text-left md:text-justify overflow-hidden'>
           <div className='sm:float-right flex justify-center md:ml-8 ml-4 md:mb-6 mb-4 md:mt-2'>
             <img
               src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760001362/KopouArtistsCollectionsIcon/Webp/yxlnxbvxgucjipucrqus.webp'
@@ -22,7 +22,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
             />
           </div>
           <p
-            className='sm:px-8 px-2 text-sm md:text-xl lg:text-2xl
+            className=' text-sm md:text-xl lg:text-2xl
     [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]'
           >
             Kopou Artist Collective is a creative community built to bring
@@ -50,10 +50,6 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
           </p>
         </div>
       </div>
-      <img
-        src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759822519/KopouArtistsCollectionsIcon/l0s00nvxmpef6uhd6qqd.png`}
-        className='lg:h-14 sm:h-10 h-8 absolute sm:top-5 top-3 sm:left-5 left-2 transform rotate-12 text-[#c23c23]'
-      />
     </div>
   );
 }

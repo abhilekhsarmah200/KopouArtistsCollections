@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function WordsFromFounder({ data }) {
+export default function Carousel({ data, component }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
@@ -15,20 +15,25 @@ export default function WordsFromFounder({ data }) {
     setCurrentSlide(index);
   };
 
-  // Auto-rotate slides every 5 seconds
+  // Auto-rotate slides every 5 seconds, except for bulletin
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+    // Only set up auto-rotate if component is NOT 'bulletin'
+    if (component !== 'bulletin') {
+      const interval = setInterval(() => {
+        nextSlide();
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [component]); // Add component to dependency array
 
   return (
     <div>
       {/* Carousel Container */}
-      <div className='relative w-full max-w-4xl'>
+      <div className='relative w-full mx-auto sm:w-[70%] md:w-full max-w-4xl'>
         {/* Carousel Slides */}
-        <div className='overflow-hidden rounded-2xl bg-white/60 backdrop-blur-sm shadow-2xl'>
+        <div
+          className={`overflow-hidden rounded-2xl bg-white backdrop-blur-sm shadow-2xl`}
+        >
           <div
             className='flex transition-transform duration-500 ease-in-out'
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -36,25 +41,42 @@ export default function WordsFromFounder({ data }) {
             {data?.map((quote, index) => (
               <div
                 key={quote?.id}
-                className='w-full flex-shrink-0 px-6 py-10 md:px-16 md:py-20'
+                className={`w-full flex-shrink-0 ${
+                  quote?.title ? 'px-6 py-6' : 'px-6 py-10 md:px-16 md:py-20'
+                }`}
               >
                 <div className='max-w-3xl mx-auto'>
                   {/* Quote Icon */}
-                  <div className='text-6xl text-center text-[#c23c23] mb-6'>
-                    <img
-                      src={quote?.img}
-                      className='lg:h-[16rem] lg:w-[16rem] sm:h-[12rem] sm:w-[12rem] h-[8rem] w-[8rem] mx-auto rounded-full border border-white shadow-neutral-400 shadow-2xl'
-                      alt=''
-                    />
-                  </div>
 
+                  {quote?.img && (
+                    <div className='text-6xl text-center text-[#c23c23] mb-6'>
+                      <img
+                        src={quote?.img}
+                        className='lg:h-[16rem] lg:w-[16rem] sm:h-[12rem] sm:w-[12rem] h-[8rem] w-[8rem] mx-auto rounded-full border border-white shadow-neutral-400 shadow-2xl'
+                        alt=''
+                      />
+                    </div>
+                  )}
+                  {quote?.title && (
+                    <p className='px-2 text-[1rem] md:text-[1.2rem] lg:text-3xl font-semibold text-[#c23c23]'>
+                      {quote?.title}
+                    </p>
+                  )}
                   {/* Quote Text */}
-                  <p className='text-sm md:text-xl lg:text-2xl text-gray-800 font-light leading-relaxed mb-8'>
-                    {quote?.text}
+                  <p
+                    className={`text-sm md:text-xl lg:text-2xl text-gray-800 font-light ${
+                      quote?.content ? 'mb-0 px-2' : 'mb-8'
+                    }`}
+                  >
+                    {quote?.text || quote?.content}
                   </p>
 
                   {/* Author */}
-                  <div className='border-t border-gray-300 pt-6'>
+                  <div
+                    className={`${
+                      quote?.title ? 'Border-0' : 'border-t'
+                    } "border-gray-300 pt-6"`}
+                  >
                     <p className='text-[1rem] md:text-[1.2rem] lg:text-3xl font-semibold text-[#c23c23]'>
                       {quote?.author}
                     </p>
@@ -71,7 +93,11 @@ export default function WordsFromFounder({ data }) {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className='hidden md:block cursor-pointer absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] p-2 md:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110'
+          className={`${
+            component === 'bulletin'
+              ? 'block p-0 top-1/3'
+              : 'hidden md:block p-2 md:p-3 top-1/2'
+          }  cursor-pointer absolute left-2 md:left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-lg transition-all duration-200 hover:scale-110`}
           aria-label='Previous quote'
         >
           <svg
@@ -91,7 +117,11 @@ export default function WordsFromFounder({ data }) {
 
         <button
           onClick={nextSlide}
-          className='hidden md:block cursor-pointer absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] p-2 md:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110'
+          className={`${
+            component === 'bulletin'
+              ? 'block p-0 top-1/3'
+              : 'hidden md:block p-2 md:p-3 top-1/2'
+          } cursor-pointer absolute right-2 md:right-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-lg transition-all duration-200 hover:scale-110`}
           aria-label='Next quote'
         >
           <svg

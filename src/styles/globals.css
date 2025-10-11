@@ -15,3 +15,9 @@
 nextjs-portal {
   display: none !important;
 }
+
+@media (min-width: 2560px) {
+  .bgimage {
+    background-size: cover;
+  }
+}

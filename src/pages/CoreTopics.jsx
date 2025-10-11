@@ -16,7 +16,10 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         </h1>
         <div className='max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[100%] hidden md:grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-5'>
           {coreTopicsData.map((data, index) => (
-            <div className='lg:max-w-xl max-w-sm bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
+            <div
+              key={index}
+              className='lg:max-w-xl max-w-sm bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'
+            >
               <div className='relative text-left md:h-full p-6 sm:p-10'>
                 <h2 className='text-sm md:text-xl lg:text-2xl font-bold text-[#c23c23]'>
                   {data?.title}

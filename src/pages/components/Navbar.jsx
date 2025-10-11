@@ -1,7 +1,7 @@
 import { User } from 'lucide-react';
 import React, { useState } from 'react';
 
-export default function Navbar({ data }) {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('Home');
 

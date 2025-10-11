@@ -2,6 +2,30 @@ import React from 'react';
 import { Facebook, Instagram, X, Linkedin, Youtube } from 'lucide-react';
 
 export default function Footer() {
+  const navLinks = [
+    { id: 'home', label: 'Home', sectionId: 'home' },
+    { id: 'vision', label: 'Vision & Mission', sectionId: 'vision-mission' },
+    { id: 'benefits', label: 'Benefits for Artists', sectionId: 'benefits' },
+    { id: 'goals', label: 'Future Goals', sectionId: 'future-goals' },
+    { id: 'about', label: 'About Us', sectionId: 'about' },
+  ];
+
+  const handleLinkClick = (linkLabel, sectionId) => {
+    // Smooth scroll to section with offset for fixed navbar
+    if (sectionId) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offset = 80; // Adjust this value based on your navbar height
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
   return (
     <footer
       className={`bg-[#faf5ef] text-gray-300 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.2)] py-10`}
@@ -23,7 +47,16 @@ export default function Footer() {
 
           {/* Middle Section - Links */}
           <div className='flex flex-col space-y-2 text-sm'>
-            <a
+            {navLinks.map((link) => (
+              <div
+                key={link.id}
+                onClick={() => handleLinkClick(link.label, link.sectionId)}
+                className='hover:text-[#c23c23]/50 text-[#c23c23] transition cursor-pointer'
+              >
+                {link.label}
+              </div>
+            ))}
+            {/* <a
               href='#'
               className='hover:text-[#c23c23]/50 text-[#c23c23] transition'
             >
@@ -46,7 +79,7 @@ export default function Footer() {
               className='hover:text-[#c23c23]/50 text-[#c23c23] transition'
             >
               Benefits for Artists
-            </a>
+            </a> */}
           </div>
 
           {/* Right Section - Social Icons */}
@@ -69,14 +102,14 @@ export default function Footer() {
               >
                 <Instagram />
               </a>
-              <a
+              {/* <a
                 href='https://twitter.com'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='p-2 bg-[#c23c23] rounded-full hover:bg-black transition'
               >
                 <X />
-              </a>
+              </a> */}
               <a
                 href='https://linkedin.com'
                 target='_blank'
@@ -86,7 +119,7 @@ export default function Footer() {
                 <Linkedin />
               </a>
               <a
-                href='https://youtube.com'
+                href='https://youtube.com/@kopouartistcollective/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='p-2 bg-[#c23c23] rounded-full hover:bg-red-600 transition'

@@ -125,35 +125,34 @@ export default function Navbar() {
             </div>
 
             {/* Right-side user profile */}
-            {data && (
-              <div className='absolute inset-y-0 right-0 flex gap-2 items-center pr-2 sm:static sm:ml-6 sm:pr-0 z-20'>
-                <button
-                  type='button'
-                  className='relative rounded-full p-1 text-[#c23c23] hover:text-[#c23c23]/50 focus:outline-2 focus:outline-offset-2 focus:outline-gray-500 cursor-pointer transition-colors duration-200'
+
+            {/* <div className='absolute inset-y-0 right-0 flex gap-2 items-center pr-2 sm:static sm:ml-6 sm:pr-0 z-20'>
+              <button
+                type='button'
+                className='relative rounded-full p-1 text-[#c23c23] hover:text-[#c23c23]/50 focus:outline-2 focus:outline-offset-2 focus:outline-gray-500 cursor-pointer transition-colors duration-200'
+              >
+                <span className='sr-only'>View notifications</span>
+                <svg
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='1.5'
+                  className='w-6 h-6'
                 >
-                  <span className='sr-only'>View notifications</span>
-                  <svg
-                    viewBox='0 0 24 24'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='1.5'
-                    className='w-6 h-6'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0'
-                    />
-                  </svg>
-                </button>
-                {/* <img
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0'
+                  />
+                </svg>
+              </button>
+              <img
                 src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
                 alt='User avatar'
                 className='size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10 ml-3'
-              /> */}
-                <User className='h-8 w-8 rounded-full border p-[0.4rem] text-[#c23c23] hover:text-[#c23c23]/50 cursor-pointer' />
-              </div>
-            )}
+              />
+              <User className='h-8 w-8 rounded-full border p-[0.4rem] text-[#c23c23] hover:text-[#c23c23]/50 cursor-pointer' />
+            </div> */}
           </div>
         </div>
 

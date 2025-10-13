@@ -6,6 +6,7 @@ import FutureGoals from './FutureGoals';
 import CoreTopics from './CoreTopics';
 import AboutUs from './AboutUs';
 import WordsFromFounder from './WordsFromFounder';
+import ContactUs from './ContactUs';
 
 export default function index() {
   return (
@@ -17,6 +18,7 @@ export default function index() {
       <FutureGoals />
       <AboutUs />
       <WordsFromFounder />
+      <ContactUs />
     </div>
   );
 }

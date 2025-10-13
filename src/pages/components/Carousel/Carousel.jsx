@@ -94,9 +94,7 @@ export default function Carousel({ data, component }) {
         <button
           onClick={prevSlide}
           className={`${
-            component === 'bulletin'
-              ? 'block p-1'
-              : 'hidden md:block p-2 md:p-3'
+            component === 'bulletin' ? 'block p-1' : 'block p-2 md:p-3'
           }  cursor-pointer absolute left-2 top-1/2 md:left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-lg transition-all duration-200 hover:scale-110`}
           aria-label='Previous quote'
         >
@@ -118,9 +116,7 @@ export default function Carousel({ data, component }) {
         <button
           onClick={nextSlide}
           className={`${
-            component === 'bulletin'
-              ? 'block p-1'
-              : 'hidden md:block p-2 md:p-3'
+            component === 'bulletin' ? 'block p-1' : 'block p-2 md:p-3'
           } cursor-pointer absolute right-2 top-1/2 md:right-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-lg transition-all duration-200 hover:scale-110`}
           aria-label='Next quote'
         >

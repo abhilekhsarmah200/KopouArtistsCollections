@@ -86,7 +86,7 @@ const FeedbackForm = () => {
 
       {submitStatus === 'success' && (
         <div className='mb-4 p-3 bg-green-100 text-green-700 rounded'>
-          Thank you for your feedback! We'll get back to you soon.
+          Thank you for your message. We'll get back to you soon.
         </div>
       )}
 

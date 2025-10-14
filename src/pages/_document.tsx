@@ -12,7 +12,7 @@ export default function Document() {
         />
         <meta
           name='keywords'
-          content='Kopou, Kopou Artists, Kapou, Kopou Phul, Kopou Artists Collective, kopouforartists, kopou.in'
+          content='Kopou, Kopou Artists, Kapou, Kopou Phul, Kopou Artists Collective, kopouforartists, kopou for artists'
         />
         <meta name='author' content='Abhilekh Sarmah' />
         <meta name='theme-color' content='#0ea5e9' />

@@ -34,7 +34,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
           <img
             src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760001360/KopouArtistsCollectionsIcon/Webp/tgixzdtumjcgddghljs9.webp'
             className=' md:h-[20rem] sm:h-[14rem] h-[10rem] md:w-[20rem] sm:w-[14rem] w-[10rem]'
-            alt=''
+            alt='Kopou Artist Collective image'
           />
         </div>
       </div>

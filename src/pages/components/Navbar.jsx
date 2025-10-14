@@ -97,8 +97,8 @@ export default function Navbar() {
                 <a href='/'>
                   <img
                     src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
-                    alt='Kopou Artist Collective'
-                    title='Kopou Artist Collective'
+                    alt='Kopou Artist Collective logo'
+                    title='Kopou Artist Collective logo'
                     className='cursor-pointer h-10 w-auto sm:h-12'
                   />
                 </a>

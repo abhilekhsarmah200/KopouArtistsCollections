@@ -37,7 +37,7 @@ export default function Footer() {
             <img
               src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
               className='h-[5rem]'
-              alt=''
+              alt='Kopou Artist Collective icon'
             />
             <p className='mt-3 text-sm text-[#c23c23]/50'>
               Bringing creativity and innovation together. Follow us for updates

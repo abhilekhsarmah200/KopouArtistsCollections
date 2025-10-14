@@ -53,7 +53,7 @@ export default function Carousel({ data, component }) {
                       <img
                         src={quote?.img}
                         className='lg:h-[16rem] lg:w-[16rem] sm:h-[12rem] sm:w-[12rem] h-[8rem] w-[8rem] mx-auto rounded-full border border-white shadow-neutral-400 shadow-2xl'
-                        alt=''
+                        alt={quote?.author}
                       />
                     </div>
                   )}

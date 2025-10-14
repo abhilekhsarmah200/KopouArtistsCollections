@@ -20,6 +20,7 @@ export default function Document() {
           name='google-site-verification'
           content='hwsZgPga5PwvvlVGotQFLXXuEFC2pJtfkrx5DrxDm1Q'
         />
+        <link rel='canonical' href='https://kopouforartists.in/' />
         {/* ✅ Favicon and App Icons */}
         <link rel='icon' href='/favicon.ico' />
         <link

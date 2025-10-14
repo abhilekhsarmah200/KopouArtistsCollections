@@ -16,7 +16,10 @@ export default function Document() {
         />
         <meta name='author' content='Abhilekh Sarmah' />
         <meta name='theme-color' content='#0ea5e9' />
-
+        <meta
+          name='google-site-verification'
+          content='hwsZgPga5PwvvlVGotQFLXXuEFC2pJtfkrx5DrxDm1Q'
+        />
         {/* ✅ Favicon and App Icons */}
         <link rel='icon' href='/favicon.ico' />
         <link

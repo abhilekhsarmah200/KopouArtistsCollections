@@ -5,7 +5,6 @@ export default function Document() {
   return (
     <Html lang='en' data-theme='light'>
       <Head>
-        <title>Kopou | Artists Collective</title>
         {/* ✅ Basic SEO */}
         <meta
           name='description'
@@ -13,7 +12,7 @@ export default function Document() {
         />
         <meta
           name='keywords'
-          content='Kopou, Kopou Artists, Kapou, Kopou Phul, Kopou Artists Collective'
+          content='Kopou, Kopou Artists, Kapou, Kopou Phul, Kopou Artists Collective, kopouforartists, kopou.in'
         />
         <meta name='author' content='Abhilekh Sarmah' />
         <meta name='theme-color' content='#0ea5e9' />
@@ -40,7 +39,7 @@ export default function Document() {
           content='Celebrating Artists, Culture & Collaboration'
         />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://yourdomain.com' />
+        <meta property='og:url' content='https://kopouforartists.in/' />
         <meta
           property='og:image'
           content='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'

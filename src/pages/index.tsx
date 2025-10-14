@@ -7,18 +7,24 @@ import CoreTopics from './CoreTopics';
 import AboutUs from './AboutUs';
 import WordsFromFounder from './WordsFromFounder';
 import ContactUs from './ContactUs';
+import Head from 'next/head';
 
 export default function index() {
   return (
-    <div>
-      <HomePage />
-      <VisionMission />
-      <Benefits />
-      <CoreTopics />
-      <FutureGoals />
-      <AboutUs />
-      <WordsFromFounder />
-      <ContactUs />
-    </div>
+    <>
+      <Head>
+        <title>Kopou | Artists Collective</title>
+      </Head>
+      <div>
+        <HomePage />
+        <VisionMission />
+        <Benefits />
+        <CoreTopics />
+        <FutureGoals />
+        <AboutUs />
+        <WordsFromFounder />
+        <ContactUs />
+      </div>
+    </>
   );
 }

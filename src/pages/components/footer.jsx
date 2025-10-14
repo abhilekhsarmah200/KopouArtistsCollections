@@ -87,7 +87,7 @@ export default function Footer() {
             <h3 className='text-[#c23c23] font-semibold mb-3'>Follow Us</h3>
             <div className='flex space-x-4'>
               <a
-                href='https://facebook.com'
+                href='https://www.facebook.com/people/Kopou-Collectives/61582127994862/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='p-2 bg-[#c23c23] rounded-full hover:bg-blue-600 transition'
@@ -114,7 +114,7 @@ export default function Footer() {
                 href='https://linkedin.com'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='p-2 bg-[#c23c23] rounded-full hover:bg-blue-500 transition'
+                className='p-2 bg-[#c23c23] rounded-full hover:bg-[#0a66c2] transition'
               >
                 <Linkedin />
               </a>

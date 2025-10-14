@@ -6,13 +6,13 @@ export default function AboutUs() {
     <div id='about' className='relative sm:px-8 px-4 z-10 h-full py-10'>
       <div className="absolute inset-0 bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152582/KopouArtistsCollectionsIcon/Webp/phzrrzfpiwtwdwg4eaxe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760148729/KopouArtistsCollectionsIcon/Webp/Banner5.webp')] opacity-60"></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
-        <h1
+        <h2
           className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
 drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
           About Us
-        </h1>
+        </h2>
         <div className='max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[75%] text-black bg-white rounded-xl p-8 text-left md:text-justify overflow-hidden'>
           <div className='sm:float-right flex justify-center md:ml-8 ml-4 md:mb-6 mb-4 md:mt-2'>
             <img

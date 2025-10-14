@@ -8,13 +8,13 @@ export default function Benefits() {
     <div id='benefits' className='relative sm:px-8 px-4 z-10 h-full py-10'>
       <div className="absolute inset-0 bg-cover sm:bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152381/KopouArtistsCollectionsIcon/Webp/ga59houdcb1abcw0owfe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760015977/KopouArtistsCollectionsIcon/Webp/Banner2.webp')] opacity-50"></div>
       <div className='flex flex-col items-center justify-center h-full text-center'>
-        <h1
+        <h2
           className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
 drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
           Benefits for Artists
-        </h1>
+        </h2>
         <div className='max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[100%] hidden md:grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-5'>
           {BenefitsData.map((data, index) => (
             <div

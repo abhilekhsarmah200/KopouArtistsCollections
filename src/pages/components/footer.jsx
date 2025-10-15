@@ -49,13 +49,13 @@ export default function Footer() {
           {/* Middle Section - Links */}
           <div className='flex flex-col space-y-2 text-sm'>
             {navLinks.map((link) => (
-              <div
-                key={link.id}
-                onClick={() => handleLinkClick(link.label, link.sectionId)}
+              <a
+                key={link?.id}
+                href={`#${link?.sectionId}`}
                 className='hover:text-[#c23c23]/50 text-[#c23c23] transition cursor-pointer'
               >
-                {link.label}
-              </div>
+                {link?.label}
+              </a>
             ))}
             {/* <a
               href='#'

@@ -32,7 +32,9 @@ export default function Carousel({ data, component }) {
       <div className='relative w-full mx-auto max-w-lg md:max-w-2xl lg:max-w-xl sm:max-w-lg'>
         {/* Carousel Slides */}
         <div
-          className={`overflow-hidden rounded-2xl bg-white backdrop-blur-sm shadow-2xl`}
+          className={`overflow-hidden rounded-2xl ${
+            component === 'bulletin' && 'h-[100%] py-[3rem]'
+          } bg-white backdrop-blur-sm shadow-2xl`}
         >
           <div
             className='flex transition-transform duration-500 ease-in-out'

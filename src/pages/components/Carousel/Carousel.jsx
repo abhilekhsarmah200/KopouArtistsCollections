@@ -54,7 +54,8 @@ export default function Carousel({ data, component }) {
                         loading='lazy'
                         src={quote?.img}
                         className='lg:h-[16rem] lg:w-[16rem] sm:h-[12rem] sm:w-[12rem] h-[8rem] w-[8rem] mx-auto rounded-full border border-white shadow-neutral-400 shadow-2xl'
-                        alt={quote?.author}
+                        alt={`Kopou Artist Collective's Founders`}
+                        title={quote?.author}
                       />
                     </div>
                   )}

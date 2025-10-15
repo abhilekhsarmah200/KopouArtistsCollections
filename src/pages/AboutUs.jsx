@@ -54,7 +54,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
             onClick={toggleReadMore}
             className='md:hidden block mt-4 px-6 py-2 text-[#c23c23] cursor-pointer transition-colors duration-300 font-semibold text-sm md:text-base transform hover:scale-105'
           >
-            {isExpanded ? 'Read Less' : 'Read More'}
+            {isExpanded ? '▲ Read Less' : '▼ Read More'}
           </button>
         </div>
       </div>

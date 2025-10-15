@@ -50,24 +50,28 @@ export default function HomePage() {
       </div>
       <div>
         <img
+          loading='lazy'
           title='Kopou Artist Collective icons'
           alt='Kopou Artist Collective icons'
           src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759822516/KopouArtistsCollectionsIcon/bsmxszi9lpgjpg7qqhbo.png`}
           className='lg:h-46 sm:h-34 h-24 absolute top-20 left-5  transform hover:scale-130 rotate-12 hover:rotate-25 transition-all duration-500 ease-in-out cursor-pointer text-[#c23c23] [filter:drop-shadow(0_0_2px_white)_drop-shadow(0_0_1px_white)] hover:[filter:drop-shadow(0_0_4px_white)_drop-shadow(0_0_2px_white)]'
         />
         <img
+          loading='lazy'
           title='Kopou Artist Collective icons'
           alt='Kopou Artist Collective icons'
           src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759822519/KopouArtistsCollectionsIcon/l0s00nvxmpef6uhd6qqd.png`}
           className='lg:h-32 sm:h-24 h-18 absolute top-20 right-5 transform hover:scale-130 rotate-12 hover:rotate-25 transition-all duration-500 ease-in-out cursor-pointer text-[#c23c23] [filter:drop-shadow(0_0_2px_white)_drop-shadow(0_0_1px_white)] hover:[filter:drop-shadow(0_0_4px_white)_drop-shadow(0_0_2px_white)]'
         />
         <img
+          loading='lazy'
           title='Kopou Artist Collective icons'
           alt='Kopou Artist Collective icons'
-          src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1760159488/KopouArtistsCollectionsIcon/Webp/zgx6po0fjfhtylxfjdga.png`}
+          src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1760492229/KopouArtistsCollectionsIcon/Webp/kmwviosh0sj4nrvrmwcp.webp`}
           className='lg:h-42 sm:h-32 h-22 absolute bottom-20 left-5 transform hover:scale-130 rotate-12 hover:rotate-25 transition-all duration-500 ease-in-out cursor-pointer text-[#c23c23] [filter:drop-shadow(0_0_2px_white)_drop-shadow(0_0_1px_white)] hover:[filter:drop-shadow(0_0_4px_white)_drop-shadow(0_0_2px_white)]'
         />
         <img
+          loading='lazy'
           title='Kopou Artist Collective icons'
           alt='Kopou Artist Collective icons'
           src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759920322/KopouArtistsCollectionsIcon/k4i9fg8gbftcjjobw4fj.png`}

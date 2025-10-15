@@ -35,6 +35,7 @@ export default function Footer() {
           {/* Left Section */}
           <div>
             <img
+              loading='lazy'
               src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
               className='h-[5rem]'
               alt='Kopou Artist Collective icon'

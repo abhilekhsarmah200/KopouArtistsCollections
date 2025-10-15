@@ -96,6 +96,7 @@ export default function Navbar() {
               <div className='flex shrink-0 items-center'>
                 <a href='/'>
                   <img
+                    loading='lazy'
                     src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
                     alt='Kopou Artist Collective logo'
                     title='Kopou Artist Collective logo'
@@ -147,6 +148,7 @@ export default function Navbar() {
                 </svg>
               </button>
               <img
+              loading="lazy"
                 src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
                 alt='User avatar'
                 className='size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10 ml-3'

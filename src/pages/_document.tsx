@@ -50,6 +50,21 @@ export default function Document() {
           rel='stylesheet'
         />
 
+        {/* Structured Data for Logo */}
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Kopou For Artists',
+              url: 'https://kopouforartists.in',
+              logo: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png',
+              description: 'Celebrating Artists, Culture & Collaboration',
+            }),
+          }}
+        />
+
         {/* ✅ Open Graph / Social Preview */}
         <meta property='og:title' content='Kopou Artist Collective' />
         <meta

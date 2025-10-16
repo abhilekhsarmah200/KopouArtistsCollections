@@ -30,6 +30,20 @@ export default function Document() {
         />
         <link rel='manifest' href='/site.webmanifest' />
 
+        {/* Google Site Logo (Recommended: 112x112px) */}
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png'
+        />
+
         {/* ✅ Google Font Example */}
         <link
           href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'

@@ -134,7 +134,14 @@ export default function Footer() {
         {/* Bottom Line */}
         <div className='mt-8 border-t border-[#c23c23] pt-5 text-center text-sm text-[#c23c23] font-bold'>
           © {new Date().getFullYear()} Kopou Artist Collective. All rights
-          reserved.
+          reserved by{' '}
+          <a
+            href='https://in.bold.pro/my/abhilekh-sarmah01'
+            className='font-extrabold underline'
+          >
+            Abhilekh Sarmah
+          </a>
+          .
         </div>
       </div>
     </footer>

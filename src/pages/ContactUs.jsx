@@ -3,10 +3,7 @@ import ContactUsForm from './components/contactUsForm/ContactUsForm';
 
 export default function ContactUs() {
   return (
-    <div
-      id='vision-mission'
-      className='relative sm:px-8 px-4 z-10 h-full py-10'
-    >
+    <div id='contactus' className='relative sm:px-8 px-4 z-10 h-full py-10'>
       <div className="absolute inset-0 bg-cover sm:bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760014025/KopouArtistsCollectionsIcon/Webp/hobxygrxd0g8jose9sua.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760016472/KopouArtistsCollectionsIcon/Webp/Banner3.webp')] opacity-50"></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h2

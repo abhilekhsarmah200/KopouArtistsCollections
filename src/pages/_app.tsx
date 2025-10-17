@@ -4,8 +4,11 @@ import Navbar from './components/Navbar';
 import { useState } from 'react';
 import Footer from './components/footer';
 import Script from 'next/script';
+import { useRouter } from 'next/router';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const is404Page = router.pathname === '/404';
   return (
     <>
       {/* Load after page becomes interactive */}
@@ -19,9 +22,9 @@ export default function App({ Component, pageProps }: AppProps) {
         src='https://chat-widget.example.com/chat.js'
         strategy='lazyOnload'
       />
-      <Navbar />
+      {!is404Page && <Navbar />}
       <Component {...pageProps} />
-      <Footer />
+      {!is404Page && <Footer />}
     </>
   );
 }

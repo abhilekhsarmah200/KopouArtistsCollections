@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MoveRight } from 'lucide-react';
-import Popup from './components/PopUp/Popup';
+import Popup from '../PopUp/Popup';
 
 export default function HomePage() {
   const handleLinkClick = (linkLabel, sectionId) => {

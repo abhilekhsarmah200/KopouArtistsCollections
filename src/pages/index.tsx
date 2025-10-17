@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePage from './HomePage';
+import HomePage from './components/WelcomePageSections/HomePage';
 import VisionMission from './components/WelcomePageSections/VisionMission';
 import Benefits from './components/WelcomePageSections/Benefits';
 import FutureGoals from './components/WelcomePageSections/FutureGoals';

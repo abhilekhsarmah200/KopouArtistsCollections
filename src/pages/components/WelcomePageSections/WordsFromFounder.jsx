@@ -32,6 +32,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
           Words From the Founders
           <img
+            title='Kopou Artist Collective icons'
             loading='lazy'
             alt='Kopou Artist Collective image'
             src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759920322/KopouArtistsCollectionsIcon/k4i9fg8gbftcjjobw4fj.png`}

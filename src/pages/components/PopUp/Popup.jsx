@@ -51,6 +51,7 @@ export default function Popup() {
             title='Announcement'
             src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760585458/KopouArtistsCollectionsIcon/Webp/kujy6c17q3xw6slmxpqo.webp'
             alt='Kopou for Artists Popup'
+            loading='lazy'
             className='w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105'
           />
         </div>

@@ -13,7 +13,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Kopou | Artists Collective</title>
+        <title>Kopou | Artist Collective</title>
       </Head>
       <div>
         <HomePage />

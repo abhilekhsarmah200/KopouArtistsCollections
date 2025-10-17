@@ -136,6 +136,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Kopou Artist Collective. All rights
           reserved by{' '}
           <a
+            target='_blank'
             href='https://in.bold.pro/my/abhilekh-sarmah01'
             className='font-extrabold underline'
           >

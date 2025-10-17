@@ -23,7 +23,7 @@ export default function Document() {
         <link rel='canonical' href='https://kopouforartists.in/' />
         {/* ✅ Favicon and App Icons */}
         <link rel='icon' href='/favicon.ico' sizes='any' />
-        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel='shortcut icon' sizes='48x48' href='/favicon.ico' />
         <link
           rel='apple-touch-icon'
           sizes='180x180'

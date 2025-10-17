@@ -1,8 +1,8 @@
 import React from 'react';
 import { Guitar, MicVocal, KeyboardMusic } from 'lucide-react';
 import { title } from 'process';
-import Carousel from './components/Carousel/Carousel';
-import BenefitsData from '../data/benefits.data';
+import Carousel from '../Carousel/Carousel';
+import BenefitsData from '../../../data/benefits.data';
 export default function Benefits() {
   return (
     <div id='benefits' className='relative sm:px-8 px-4 z-10 h-full py-10'>

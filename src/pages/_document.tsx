@@ -31,18 +31,8 @@ export default function Document() {
         <link rel='manifest' href='/site.webmanifest' />
 
         {/* Google Site Logo (Recommended: 112x112px) */}
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='32x32'
-          href='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='16x16'
-          href='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png'
-        />
+        <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/favicon.png' />
 
         {/* ✅ Google Font Example */}
         <link
@@ -59,7 +49,7 @@ export default function Document() {
               '@type': 'Organization',
               name: 'Kopou For Artists',
               url: 'https://kopouforartists.in',
-              logo: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png',
+              logo: '/favicon.png',
               description: 'Celebrating Artists, Culture & Collaboration',
             }),
           }}

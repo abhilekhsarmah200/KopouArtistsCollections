@@ -68,12 +68,9 @@ export default function Document() {
           property='og:image'
           content='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
         />
-        <meta property='og:site_name' content='Kopou For Artists' />
+        <meta property='og:site_name' content='Kopou Artist Collective' />
         <meta name='twitter:card' content='summary_large_image' />
-        <meta
-          name='twitter:title'
-          content='Kopou For Artists - Digital Art Portfolio'
-        />
+        <meta name='twitter:title' content='Kopou Artist Collective' />
         <meta
           name='twitter:description'
           content='Celebrating Artists, Culture & Collaboration'

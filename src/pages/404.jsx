@@ -1,3 +1,4 @@
+import { Home } from 'lucide-react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -10,8 +11,10 @@ export default function Custom404() {
       <Head>
         <title>Kopou Artist Collective | Page Not Found</title>
       </Head>
-      <div className='min-h-screen bg-[#faf5ef] flex items-center justify-center p-4'>
-        <div className='bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center'>
+
+      <div className='relative min-h-screen flex items-center justify-center p-4'>
+        <div className="absolute inset-0 bg-contain sm:bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152582/KopouArtistsCollectionsIcon/Webp/phzrrzfpiwtwdwg4eaxe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760016472/KopouArtistsCollectionsIcon/Webp/Banner3.webp')] opacity-50"></div>
+        <div className='bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center z-10'>
           <div className='w-24 h-24 mx-auto mb-6 bg-red-100 rounded-full flex items-center justify-center'>
             <svg
               className='w-12 h-12 text-[#c23c23]'
@@ -28,11 +31,13 @@ export default function Custom404() {
             </svg>
           </div>
 
-          <h1 className='text-6xl font-bold text-[#c23c23] mb-2'>404</h1>
-          <h2 className='text-2xl font-semibold text-gray-800 mb-4'>
+          <h1 className='text-2xl md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-2'>
+            404
+          </h1>
+          <h2 className='text-sm md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4'>
             Oops! Lost in space?
           </h2>
-          <p className='text-[#c23c23]/50 mb-8'>
+          <p className='text-[#c23c23]/50 text-sm md:text-base lg:text-xl mb-8'>
             The page you're looking for seems to have drifted off into the
             digital universe.
           </p>
@@ -46,14 +51,14 @@ export default function Custom404() {
             </button> */}
             <Link
               href='/'
-              className='w-full block hover:bg-[#c23c23] bg-[#c23c23]/80 text-white font-medium py-3 px-4 rounded-lg transition duration-200'
+              className='text-sm flex gap-2 md:text-base lg:text-xl w-full items-center justify-center hover:bg-[#c23c23] bg-[#c23c23]/80 text-white font-medium py-3 px-4 rounded-lg transition duration-200'
             >
-              Return Home
+              <Home /> Return Home
             </Link>
           </div>
 
           <div className='mt-8 pt-6 border-t border-gray-200'>
-            <p className='text-sm text-gray-500'>
+            <p className='text-sm md:text-base lg:text-xl text-gray-500'>
               Need help?{' '}
               <Link
                 href='/#contactus'

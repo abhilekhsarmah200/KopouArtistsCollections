@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
 
   /* Custom screen sizes for different devices */
+  --breakpoint-xs: 360px;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -21,6 +22,7 @@
   --breakpoint-4xl: 2560px;
 
   /* Device-specific custom properties */
+  --device-folded: 360px;
   --device-mobile: 640px;
   --device-tablet: 768px;
   --device-laptop: 1024px;

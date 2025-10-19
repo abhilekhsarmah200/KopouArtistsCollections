@@ -24,11 +24,7 @@ export default function Document() {
         {/* ✅ Favicon and App Icons */}
         <link rel='icon' href='/favicon.ico' />
         <link rel='shortcut icon' href='/favicon.ico' />
-        <link
-          rel='apple-touch-icon'
-          sizes='180x180'
-          href='/apple-touch-icon.png'
-        />
+        <link rel='apple-touch-icon' href='/favicon.png' />
         <link rel='manifest' href='/site.webmanifest' />
 
         {/* Google Site Logo (Recommended: 112x112px) */}

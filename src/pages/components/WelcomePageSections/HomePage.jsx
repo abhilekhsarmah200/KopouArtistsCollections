@@ -79,7 +79,7 @@ export default function HomePage() {
           className='lg:h-42 sm:h-32 h-22 absolute bottom-20 right-5 transform hover:scale-130 rotate-12 hover:rotate-25 transition-all duration-500 ease-in-out cursor-pointer text-[#c23c23] [filter:drop-shadow(0_0_2px_white)_drop-shadow(0_0_1px_white)] hover:[filter:drop-shadow(0_0_4px_white)_drop-shadow(0_0_2px_white)]'
         />
       </div>
-      <Popup />
+      {/* <Popup /> */}
     </div>
   );
 }

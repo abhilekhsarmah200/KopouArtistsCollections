@@ -22,8 +22,8 @@ export default function Document() {
         />
         <link rel='canonical' href='https://kopouforartists.in/' />
         {/* ✅ Favicon and App Icons */}
-        <link rel='icon' href='/favicon.ico' sizes='any' />
-        <link rel='shortcut icon' sizes='48x48' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.ico' />
+        <link rel='shortcut icon' href='/favicon.ico' />
         <link
           rel='apple-touch-icon'
           sizes='180x180'
@@ -32,8 +32,8 @@ export default function Document() {
         <link rel='manifest' href='/site.webmanifest' />
 
         {/* Google Site Logo (Recommended: 112x112px) */}
-        <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
-        <link rel='icon' type='image/png' sizes='16x16' href='/favicon.png' />
+        {/* <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/favicon.png' /> */}
 
         {/* ✅ Google Font Example */}
         <link
@@ -42,7 +42,7 @@ export default function Document() {
         />
 
         {/* Structured Data for Logo */}
-        <script
+        {/* <script
           type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -54,7 +54,7 @@ export default function Document() {
               description: 'Celebrating Artists, Culture & Collaboration',
             }),
           }}
-        />
+        /> */}
 
         {/* ✅ Open Graph / Social Preview */}
         <meta property='og:title' content='Kopou Artist Collective' />

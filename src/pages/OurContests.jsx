@@ -1,5 +1,6 @@
 import React from 'react';
 import GiftBox from './components/WinnerAnnouncement/WinnerAnnouncementBox';
+import CountdownTimer from './components/CountDownComponent/CountDown';
 
 export default function ContestsPage() {
   return (
@@ -12,13 +13,9 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
       >
         Contest Hub!
       </h2>
-      <div className='flex lg:flex-row flex-col-reverse text-black text-left lg:items-center items-center gap-2 mt-5'>
+      <div className='flex lg:flex-row flex-col-reverse text-black text-left lg:items-center items-center gap-2 mt-8'>
         <div className='w-full'>
-          <GiftBox
-            giftImage={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1760872446/KopouArtistsCollectionsIcon/Contests%20Winners/1stWinner.webp`}
-            altText='Amazing Surprise!'
-            className='mb-8'
-          />
+          <CountdownTimer />
         </div>
         <div className='lg:max-w-xl z-5 sm:max-w-lg max-w-sm bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
           <div className='relative md:h-full p-6 sm:p-10'>

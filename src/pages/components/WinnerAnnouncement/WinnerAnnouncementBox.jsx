@@ -12,12 +12,28 @@ export default function GiftBox({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+  const [windowSize, setWindowSize] = useState({
+    width: typeof window !== 'undefined' ? window.innerWidth : 0,
+    height: typeof window !== 'undefined' ? window.innerHeight : 0,
+  });
 
+  // ✅ Update confetti dimensions on resize
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-    }
+    if (typeof window === 'undefined') return;
+
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // initial size
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const handleClick = useCallback(() => {
@@ -27,11 +43,10 @@ export default function GiftBox({
       setTimeout(() => setShowConfetti(false), 5000);
     }
   }, [isOpen]);
+
   const handleClickClose = useCallback(() => {
-    if (isOpen) {
-      setIsOpen(false);
-    }
-  }, [isOpen]);
+    if (isOpen && !showConfetti) setIsOpen(false);
+  }, [isOpen, showConfetti]);
 
   return (
     <>
@@ -43,7 +58,7 @@ export default function GiftBox({
             numberOfPieces={250}
             gravity={0.25}
             recycle={false}
-            style={{ zIndex: 30 }}
+            style={{ zIndex: 30, width: '90vw' }}
             colors={['#ff4b5c', '#ffe600', '#00e0ff', '#a020f0', '#00ff88']}
           />
         )}
@@ -87,9 +102,6 @@ export default function GiftBox({
               <div className='relative'>
                 {/* Lid flips open */}
                 <div className='absolute top-0 left-0 bg-gradient-to-br from-rose-400 via-red-500 to-red-700 rounded-t-xl border-t-2 border-red-800 shadow-xl animate-lid-open origin-bottom' />
-
-                {/* Base stays */}
-                {/* <div className='bg-gradient-to-br from-white via-white to-white rounded-b-xl border-2 border-white shadow-2xl animate-bounce-slight'></div> */}
 
                 {/* Revealed Gift Image */}
                 <div className='relative -top-[1rem] left-1/2 -translate-x-1/2 animate-reveal-image'>

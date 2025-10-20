@@ -27,11 +27,11 @@ export default function Navbar() {
     setMenuOpen(false);
 
     // Check if user is currently on Our Contests page
-    const isOnContestsPage = pathname === '/OurContests';
+    const isOnContestsPage = pathname === '/ourcontests';
 
     if (isExternalPage) {
       // Redirect to Our Contests page
-      router.push('/OurContests');
+      router.push('/ourcontests');
     } else if (isOnContestsPage) {
       // If user is on Our Contests page and clicks any other tab,
       // navigate back to home page with sectionId as query parameter

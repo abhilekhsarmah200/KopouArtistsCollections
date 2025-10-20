@@ -30,7 +30,7 @@ export default function HomePage() {
     if (isExternalPage) {
       // Handle external page navigation (like going to Our Contests)
       // You can use router.push here if needed
-      window.location.href = '/ourcontests';
+      window.location.href = '/ourcontest';
     } else {
       // Smooth scroll to section with offset for fixed navbar
       if (sectionId) {

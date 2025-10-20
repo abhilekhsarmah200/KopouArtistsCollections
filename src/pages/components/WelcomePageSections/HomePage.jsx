@@ -87,7 +87,7 @@ export default function HomePage() {
             }
             className=' animate-pulse text-[0.5rem] md:text-base lg:text-[1.2rem] transition-all duration-300 hover:-translate-y-2 cursor-pointer flex md:gap-2 mt-8 bg-[#c23c23] border border-[#c23c23] text-[white] py-2 px-4 rounded-xl'
           >
-            Reveal Winner <Gift className='h-3 md:h-auto' />
+            Reveal Our Winner <Gift className='h-3 md:h-auto' />
           </button>
         </div>
       </div>

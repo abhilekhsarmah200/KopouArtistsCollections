@@ -69,7 +69,7 @@ export default function GiftBox({
                   <img
                     src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760925999/KopouArtistsCollectionsIcon/Contests%20Winners/GiftBox1.webp'
                     alt='Gift Box Cover'
-                    className='h-full w-full bg-white'
+                    className='relative h-full w-full bg-white z-10'
                   />
                 </div>
 
@@ -92,13 +92,13 @@ export default function GiftBox({
                 {/* <div className='bg-gradient-to-br from-white via-white to-white rounded-b-xl border-2 border-white shadow-2xl animate-bounce-slight'></div> */}
 
                 {/* Revealed Gift Image */}
-                <div className='relative top-[0] left-1/2 -translate-x-1/2 animate-reveal-image'>
+                <div className='relative -top-[1rem] left-1/2 -translate-x-1/2 animate-reveal-image'>
                   <div className='relative w-[20rem] h-[20rem] md:w-[35rem] md:h-[35rem] rounded-2xl overflow-hidden shadow-2xl border-4 border-white'>
                     <img
                       src={giftImage}
                       alt={altText}
                       fill
-                      className='object-cover'
+                      className='object-cover bg-white'
                       priority
                     />
                     <div

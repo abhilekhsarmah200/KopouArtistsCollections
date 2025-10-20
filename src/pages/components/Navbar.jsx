@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const navLinks = [
     { id: 'home', label: 'Home', sectionId: 'home' },
-    { id: 'vision', label: 'Vision & Mission', sectionId: 'vision-mission' },
+    // { id: 'vision', label: 'Vision & Mission', sectionId: 'vision-mission' },
     { id: 'benefits', label: 'Benefits for Artists', sectionId: 'benefits' },
     { id: 'goals', label: 'Future Goals', sectionId: 'future-goals' },
     { id: 'about', label: 'About Us', sectionId: 'about' },

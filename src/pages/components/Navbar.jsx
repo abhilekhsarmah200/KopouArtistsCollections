@@ -1,34 +1,55 @@
 import { User } from 'lucide-react';
 import React, { useState } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('Home');
+  const router = useRouter();
+  const pathname = usePathname();
 
   const navLinks = [
     { id: 'home', label: 'Home', sectionId: 'home' },
-    { id: 'vision', label: 'Vision & Mission', sectionId: 'vision-mission' },
+    // { id: 'vision', label: 'Vision & Mission', sectionId: 'vision-mission' },
     { id: 'benefits', label: 'Benefits for Artists', sectionId: 'benefits' },
     { id: 'goals', label: 'Future Goals', sectionId: 'future-goals' },
     { id: 'about', label: 'About Us', sectionId: 'about' },
+    {
+      id: 'contests',
+      label: 'Our Contests',
+      sectionId: 'winner',
+      isExternalPage: true,
+    },
   ];
 
-  const handleLinkClick = (linkLabel, sectionId) => {
+  const handleLinkClick = (linkLabel, sectionId, isExternalPage = false) => {
     setActiveLink(linkLabel);
     setMenuOpen(false);
 
-    // Smooth scroll to section with offset for fixed navbar
-    if (sectionId) {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        const offset = 80; // Adjust this value based on your navbar height
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
+    // Check if user is currently on Our Contests page
+    const isOnContestsPage = pathname === '/OurContests';
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-        });
+    if (isExternalPage) {
+      // Redirect to Our Contests page
+      router.push('/OurContests');
+    } else if (isOnContestsPage) {
+      // If user is on Our Contests page and clicks any other tab,
+      // navigate back to home page with sectionId as query parameter
+      router.push(`/#${sectionId}`);
+    } else {
+      // User is already on home page, just scroll to section
+      if (sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offset = 80; // Adjust this value based on your navbar height
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+        }
       }
     }
   };
@@ -115,7 +136,11 @@ export default function Navbar() {
                         activeLink === link.label
                       )} md:text-[1rem] text-[0.7rem]`}
                       onClick={() =>
-                        handleLinkClick(link.label, link.sectionId)
+                        handleLinkClick(
+                          link.label,
+                          link.sectionId,
+                          link.isExternalPage
+                        )
                       }
                     >
                       {link.label}
@@ -126,7 +151,6 @@ export default function Navbar() {
             </div>
 
             {/* Right-side user profile */}
-
             {/* <div className='absolute inset-y-0 right-0 flex gap-2 items-center pr-2 sm:static sm:ml-6 sm:pr-0 z-20'>
               <button
                 type='button'
@@ -165,7 +189,13 @@ export default function Navbar() {
               <button
                 key={link.id}
                 className={getLinkClasses(activeLink === link.label, true)}
-                onClick={() => handleLinkClick(link.label, link.sectionId)}
+                onClick={() =>
+                  handleLinkClick(
+                    link.label,
+                    link.sectionId,
+                    link.isExternalPage
+                  )
+                }
               >
                 {link.label}
               </button>

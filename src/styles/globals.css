@@ -41,3 +41,43 @@ nextjs-portal {
     background-size: cover;
   }
 }
+
+/* gift box */
+@keyframes lid-open {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-120deg);
+  }
+}
+.animate-lid-open {
+  animation: lid-open 1s ease-out forwards;
+}
+
+@keyframes reveal-image {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-reveal-image {
+  animation: reveal-image 1s ease-out forwards;
+}
+
+@keyframes bounce-slight {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.animate-bounce-slight {
+  animation: bounce-slight 2s infinite;
+}

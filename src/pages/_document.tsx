@@ -16,10 +16,16 @@ export default function Document() {
         />
         <meta name='author' content='Abhilekh Sarmah' />
         <meta name='theme-color' content='#0ea5e9' />
+
+        {/* Google Site Verification */}
         <meta
           name='google-site-verification'
           content='hwsZgPga5PwvvlVGotQFLXXuEFC2pJtfkrx5DrxDm1Q'
         />
+
+        {/* Bing Site Verification */}
+        <meta name='msvalidate.01' content='A02E9F95937DDCC6EADA821108194993' />
+
         <link rel='canonical' href='https://kopouforartists.in/' />
         {/* ✅ Favicon and App Icons */}
         <link rel='icon' href='/favicon.ico' />

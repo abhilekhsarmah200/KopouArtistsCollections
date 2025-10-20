@@ -12,10 +12,6 @@ export default function App({ Component, pageProps }: AppProps) {
   const is404Page = router.pathname === '/404';
   return (
     <>
-      <Head>
-        <link rel='icon' href='/favicon.png' sizes='32x32' />
-        <link rel='apple-touch-icon' href='/favicon.png' />
-      </Head>
       {/* Load after page becomes interactive */}
       <Script
         src='https://analytics.example.com/script.js'

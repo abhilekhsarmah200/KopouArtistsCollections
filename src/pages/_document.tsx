@@ -27,15 +27,13 @@ export default function Document() {
         <meta name='msvalidate.01' content='A02E9F95937DDCC6EADA821108194993' />
 
         <link rel='canonical' href='https://kopouforartists.in/' />
-        {/* ✅ Favicon and App Icons */}
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='shortcut icon' href='/favicon.ico' />
-        <link rel='apple-touch-icon' href='/favicon.png' />
-        <link rel='manifest' href='/site.webmanifest' />
 
-        {/* Google Site Logo (Recommended: 112x112px) */}
-        {/* <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
-        <link rel='icon' type='image/png' sizes='16x16' href='/favicon.png' /> */}
+        {/* ✅ Favicon and App Icons */}
+        <link rel='icon' type='image/png' href='/favicon.png' sizes='96x96' />
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+        <link rel='shortcut icon' href='/favicon.ico' />
+        <link rel='apple-touch-icon' sizes='180x180' href='/favicon.png' />
+        <link rel='manifest' href='/site.webmanifest' />
 
         {/* ✅ Google Font Example */}
         <link

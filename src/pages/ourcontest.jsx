@@ -1,6 +1,7 @@
 import React from 'react';
 import GiftBox from './components/WinnerAnnouncement/WinnerAnnouncementBox';
 import CountdownTimer from './components/CountDownComponent/CountDown';
+import ResponsiveCarousel from './components/Carousel/ResponsiveCarousel';
 
 export default function ContestsPage() {
   return (
@@ -39,6 +40,16 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
             </div>
           </div>
         </div>
+      </div>
+      <h2
+        className='flex justify-center sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
+[text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
+drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
+      >
+        Winners
+      </h2>
+      <div>
+        <ResponsiveCarousel />
       </div>
     </div>
   );

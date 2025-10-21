@@ -20,7 +20,7 @@ export default function Document() {
         {/* Google Site Verification */}
         <meta
           name='google-site-verification'
-          content='hwsZgPga5PwvvlVGotQFLXXuEFC2pJtfkrx5DrxDm1Q'
+          content='JAxJFQLMJhM4KtOp4tSwF-9VLzBdTJQcSYwEGAoytpk'
         />
 
         {/* Bing Site Verification */}

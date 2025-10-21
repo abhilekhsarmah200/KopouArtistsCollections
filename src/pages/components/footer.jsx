@@ -40,14 +40,14 @@ export default function Footer() {
               className='h-[5rem]'
               alt='Kopou Artist Collective icon'
             />
-            <p className='mt-3 text-sm text-[#c23c23]/50'>
+            <p className='mt-3 text-sm text-[#c23c23]/50 montserrat-text'>
               Bringing creativity and innovation together. Follow us for updates
               and inspiration.
             </p>
           </div>
 
           {/* Middle Section - Links */}
-          <div className='flex flex-col space-y-2 text-sm'>
+          <div className='flex flex-col space-y-2 text-sm montserrat-text'>
             {navLinks.map((link) => (
               <a
                 key={link?.id}
@@ -85,7 +85,9 @@ export default function Footer() {
 
           {/* Right Section - Social Icons */}
           <div>
-            <h3 className='text-[#c23c23] font-semibold mb-3'>Follow Us</h3>
+            <h3 className='text-[#c23c23] font-semibold mb-3 montserrat-text'>
+              Follow Us
+            </h3>
             <div className='flex space-x-4'>
               <a
                 href='https://www.facebook.com/people/Kopou-Collectives/61582127994862/'
@@ -132,7 +134,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Line */}
-        <div className='mt-8 border-t border-[#c23c23] pt-5 text-center text-sm text-[#c23c23] font-bold'>
+        <div className='mt-8 border-t montserrat-text border-[#c23c23] pt-5 text-center text-sm text-[#c23c23] font-bold'>
           © {new Date().getFullYear()} Kopou Artist Collective. All rights
           reserved by{' '}
           <a

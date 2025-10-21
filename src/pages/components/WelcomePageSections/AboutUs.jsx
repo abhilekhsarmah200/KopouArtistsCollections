@@ -17,7 +17,7 @@ export default function AboutUs() {
       <div className="absolute inset-0 bg-cover sm:bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152582/KopouArtistsCollectionsIcon/Webp/phzrrzfpiwtwdwg4eaxe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760148729/KopouArtistsCollectionsIcon/Webp/Banner5.webp')] opacity-60"></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h2
-          className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
+          className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 poppins-text
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
 drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
@@ -33,7 +33,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
             />
           </div>
           <p
-            className='hidden md:block text-sm md:text-xl lg:text-2xl
+            className='hidden md:block text-sm md:text-[1rem] lg:text-xl montserrat-text
       [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]'
           >
             {fullContent}
@@ -44,7 +44,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
             }`}
           >
             <p
-              className='text-sm md:text-xl lg:text-2xl
+              className='text-sm md:text-[1rem] lg:text-xl montserrat-text
       [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]'
             >
               {isExpanded ? fullContent : shortContent}

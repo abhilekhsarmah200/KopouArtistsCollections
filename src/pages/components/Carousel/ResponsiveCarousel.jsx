@@ -40,7 +40,7 @@ const ResponsiveCarousel = () => {
   }, [swiperInstance]);
 
   return (
-    <div className='relative w-full px-6 py-10 group'>
+    <div className='relative w-full px-6 py-3 md:py-10 group'>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={20}
@@ -60,12 +60,14 @@ const ResponsiveCarousel = () => {
                 src={item?.img}
                 alt={item?.alt}
                 title={`${item?.title} - ${item?.alt}`}
-                className='w-full h-[30rem]'
+                className='w-full md:h-[30rem] h-[23rem]'
               />
-              <div className='p-4 text-center font-bold capitalize text-[#c23c23] text-xl'>
+              <div className='poppins-text px-4 pt-4 text-center font-bold capitalize text-[#c23c23] text-[1.2rem] md:text-[1.5rem] lg:text-3xl'>
                 {item?.title}
               </div>
-              <p className='text-base p-2 text-center font-sans'>{item?.alt}</p>
+              <p className='montserrat-text text-sm md:text-[1rem] lg:text-xl px-2 pb-4 text-center font-sans'>
+                {item?.alt}
+              </p>
             </div>
           </SwiperSlide>
         ))}

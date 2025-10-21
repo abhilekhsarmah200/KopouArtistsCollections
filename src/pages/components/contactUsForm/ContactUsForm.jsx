@@ -79,8 +79,8 @@ const FeedbackForm = () => {
   const showRating = formData.subject === 'feedback';
 
   return (
-    <div className=' mx-auto p-6'>
-      {/* <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-6 text-[#c23c23]'>
+    <div className=' mx-auto p-6 montserrat-text text-sm md:text-xl lg:text-2xl'>
+      {/* <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-6 text-[#c23c23] poppins-text'>
         Send Us Feedback
       </h2> */}
 

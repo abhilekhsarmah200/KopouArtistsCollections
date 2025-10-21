@@ -42,19 +42,22 @@ export default function Document() {
         />
 
         {/* Structured Data for Logo */}
-        {/* <script
+        <script
           type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'Kopou For Artists',
+              name: 'Kopou Artist Collective',
               url: 'https://kopouforartists.in',
-              logo: '/favicon.png',
-              description: 'Celebrating Artists, Culture & Collaboration',
+              logo: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png',
+              sameAs: [
+                'https://www.instagram.com/kopouforartists/',
+                'https://www.facebook.com/people/Kopou-Artists-Collectives/61582127994862/',
+              ],
             }),
           }}
-        /> */}
+        />
 
         {/* ✅ Open Graph / Social Preview */}
         <meta property='og:title' content='Kopou Artist Collective' />
@@ -83,6 +86,18 @@ export default function Document() {
         <meta
           name='image'
           content='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
+        />
+
+        {/* Google Font Link */}
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='anonymous'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+          rel='stylesheet'
         />
       </Head>
       <body>

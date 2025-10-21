@@ -110,3 +110,16 @@ nextjs-portal {
 .animate-fade-out {
   animation: fadeOut 1s ease-out forwards;
 }
+
+.montserrat-text {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.poppins-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}

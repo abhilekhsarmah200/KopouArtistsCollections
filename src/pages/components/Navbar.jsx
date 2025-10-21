@@ -56,8 +56,8 @@ export default function Navbar() {
 
   const getLinkClasses = (isActive, isMobile = false) => {
     const baseClasses = isMobile
-      ? 'block rounded-md px-3 py-2 text-base font-medium transition-all duration-200 ease-in-out cursor-pointer'
-      : 'rounded-md md:px-3 px-2 py-2 text-sm md:font-medium transition-all duration-200 ease-in-out cursor-pointer';
+      ? 'block rounded-md px-2 py-2 text-base font-[600] transition-all duration-200 ease-in-out cursor-pointer'
+      : 'rounded-md md:px-2 px-2 py-2 text-sm font-[600] transition-all duration-200 ease-in-out cursor-pointer';
 
     if (isActive) {
       return `${baseClasses} bg-[#c23c23] text-white shadow-lg shadow-gray-600/25`;
@@ -68,7 +68,7 @@ export default function Navbar() {
 
   return (
     <div className='fixed top-0 left-0 right-0 z-50'>
-      <nav className='relative bg-transparent backdrop-blur-sm after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10'>
+      <nav className='relative bg-[#faf5ef] shadow-2xl backdrop-blur-sm after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10'>
         <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
           <div className='relative flex sm:h-[6rem] h-[5rem] items-center justify-between'>
             {/* Mobile menu button */}
@@ -113,7 +113,7 @@ export default function Navbar() {
             </div>
 
             {/* Logo and main links */}
-            <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
+            <div className='flex flex-1 items-center justify-center sm:items-center sm:justify-start'>
               <div className='flex shrink-0 items-center'>
                 <a href='/'>
                   <img
@@ -128,7 +128,7 @@ export default function Navbar() {
 
               {/* Desktop links */}
               <div className='hidden sm:ml-6 sm:block'>
-                <div className='flex lg:space-x-4'>
+                <div className='flex lg:space-x-4 montserrat-text'>
                   {navLinks.map((link) => (
                     <button
                       key={link.id}
@@ -184,7 +184,7 @@ export default function Navbar() {
 
         {/* Mobile menu dropdown */}
         {menuOpen && (
-          <div className='sm:hidden absolute top-full left-0 right-0 z-10 bg-white/90 shadow-2xl backdrop-blur-sm px-2 pt-2 pb-3 space-y-1 border-t border-white/10'>
+          <div className='sm:hidden absolute top-full left-0 right-0 z-10 bg-white/90 shadow-2xl backdrop-blur-sm px-2 pt-2 pb-3 space-y-1 border-t border-white/10 montserrat-text'>
             {navLinks.map((link) => (
               <button
                 key={link.id}

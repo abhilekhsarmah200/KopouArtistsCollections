@@ -8,7 +8,7 @@ export default function CoreTopics() {
       <div className="absolute inset-0 bg-cover sm:bg-contain bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152381/KopouArtistsCollectionsIcon/Webp/ga59houdcb1abcw0owfe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760148586/KopouArtistsCollectionsIcon/Webp/Banner4.webp')] opacity-40"></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h2
-          className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 
+          className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 poppins-text
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
 drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
@@ -20,11 +20,11 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
               key={index}
               className='lg:max-w-xl max-w-sm bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'
             >
-              <div className='relative text-left md:h-full p-6 sm:p-10'>
-                <h2 className='text-sm md:text-xl lg:text-2xl font-bold text-[#c23c23]'>
+              <div className='relative text-left md:h-full sm:p-8'>
+                <h2 className='text-[1.2rem] md:text-[1.5rem] lg:text-[1.6rem] font-bold text-[#c23c23] poppins-text'>
                   {data?.title}
                 </h2>
-                <div className='text-base md:text-lg lg:text-xl'>
+                <div className='montserrat-text text-sm md:text-[1rem] lg:text-xl'>
                   {data?.content}
                 </div>
               </div>

@@ -87,6 +87,18 @@ export default function Document() {
           name='image'
           content='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760073679/KopouArtistsCollectionsIcon/Webp/icon2.webp'
         />
+
+        {/* Google Font Link */}
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='anonymous'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
+          rel='stylesheet'
+        />
       </Head>
       <body>
         <Main />

@@ -62,13 +62,13 @@ export default function Carousel({ data, component }) {
                     </div>
                   )}
                   {quote?.title && (
-                    <p className='px-2 text-[1rem] md:text-[1.2rem] lg:text-3xl font-semibold text-[#c23c23]'>
+                    <p className='poppins-text font-bold px-2 text-[1.2rem] md:text-[1.5rem] lg:text-3xl text-[#c23c23]'>
                       {quote?.title}
                     </p>
                   )}
                   {/* Quote Text */}
                   <p
-                    className={`text-sm md:text-xl lg:text-2xl text-gray-800 font-light ${
+                    className={`montserrat-text text-sm md:text-[1rem] lg:text-xl text-gray-800 font-light ${
                       quote?.content ? 'mb-0 px-2' : 'mb-8'
                     }`}
                   >
@@ -81,10 +81,10 @@ export default function Carousel({ data, component }) {
                       quote?.title ? 'Border-0' : 'border-t'
                     } "border-gray-300 pt-6"`}
                   >
-                    <p className='text-[1rem] md:text-[1.2rem] lg:text-3xl font-semibold text-[#c23c23]'>
+                    <p className='poppins-text text-[1.2rem] md:text-[1.5rem] lg:text-3xl font-bold text-[#c23c23]'>
                       {quote?.author}
                     </p>
-                    <p className='text-sm md:text-xl lg:text-2xl text-gray-600 mt-1'>
+                    <p className='montserrat-text text-sm md:text-[1rem] lg:text-xl text-gray-600 mt-1'>
                       {quote?.position}
                     </p>
                   </div>

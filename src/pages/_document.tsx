@@ -18,10 +18,10 @@ export default function Document() {
         <meta name='theme-color' content='#0ea5e9' />
 
         {/* Google Site Verification */}
-        <meta
+        {/* <meta
           name='google-site-verification'
           content='JAxJFQLMJhM4KtOp4tSwF-9VLzBdTJQcSYwEGAoytpk'
-        />
+        /> */}
 
         {/* Bing Site Verification */}
         <meta name='msvalidate.01' content='A02E9F95937DDCC6EADA821108194993' />
@@ -51,10 +51,6 @@ export default function Document() {
               name: 'Kopou Artist Collective',
               url: 'https://kopouforartists.in',
               logo: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1760584530/KopouArtistsCollectionsIcon/Webp/hvxv1jxgeu8xnlo9x2sg.png',
-              sameAs: [
-                'https://www.instagram.com/kopouforartists/',
-                'https://www.facebook.com/people/Kopou-Artists-Collectives/61582127994862/',
-              ],
             }),
           }}
         />

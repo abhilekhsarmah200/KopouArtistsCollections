@@ -5,7 +5,7 @@ import Carousel from '../Carousel/Carousel';
 export default function CoreTopics() {
   return (
     <div className='relative sm:px-8 px-4 z-10 h-full py-4 md:py-10'>
-      <div className="absolute inset-0 bg-cover sm:bg-contain bg-[#faf5ef] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760148586/KopouArtistsCollectionsIcon/Webp/Banner4.webp')] opacity-40"></div>
+      <div className='absolute inset-0 bg-cover sm:bg-contain bg-[#faf5ef] opacity-40'></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h2
           className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 poppins-text

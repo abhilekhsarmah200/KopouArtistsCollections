@@ -13,7 +13,7 @@ export default function Custom404() {
       </Head>
 
       <div className='relative min-h-screen flex items-center justify-center p-4'>
-        <div className="absolute inset-0 bg-contain sm:bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152582/KopouArtistsCollectionsIcon/Webp/phzrrzfpiwtwdwg4eaxe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760016472/KopouArtistsCollectionsIcon/Webp/Banner3.webp')] opacity-50"></div>
+        <div className='absolute inset-0 bg-contain sm:bg-contain bgimage opacity-50'></div>
         <div className='bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center z-10'>
           <div className='animate-pulse w-24 h-24 mx-auto mb-6 bg-red-100 rounded-full flex items-center justify-center'>
             <svg

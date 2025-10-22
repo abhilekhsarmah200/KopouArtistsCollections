@@ -77,18 +77,18 @@ export default function HomePage() {
             onClick={() =>
               handleLinkClick('Vision & Mission', 'vision-mission')
             }
-            className='z-10 text-[0.6rem] md:text-[1rem] lg:text-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex md:gap-2 mt-8 bg-white border border-[#c23c23] hover:border-[#c23c23]/70 text-[#c23c23] hover:text-[#c23c23]/70 py-2 px-4 rounded-xl'
+            className='z-10 text-[0.6rem] md:text-[1rem] lg:text-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex items-center md:gap-2 mt-8 bg-white border border-[#c23c23] hover:border-[#c23c23]/70 text-[#c23c23] hover:text-[#c23c23]/70 py-2 px-4 rounded-xl'
           >
             Explore More <MoveRight className='h-3 md:h-auto' />
           </button>
-          <button
+          {/* <button
             onClick={() =>
               handleLinkClick('Winner Announcement', 'winner', true)
             }
             className=' animate-pulse z-10 text-[0.6rem] md:text-[1rem] lg:text-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex md:gap-2 mt-8 bg-[#c23c23] border border-[#c23c23] text-[white] py-2 px-4 rounded-xl'
           >
             Reveal Our Winner <Gift className='h-3 md:h-auto' />
-          </button>
+          </button> */}
         </div>
       </div>
       <div>

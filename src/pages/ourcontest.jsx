@@ -6,7 +6,7 @@ import ResponsiveCarousel from './components/Carousel/ResponsiveCarousel';
 export default function ContestsPage() {
   return (
     <div className='relative sm:px-8 px-4 z-10 h-full py-10 mt-[4rem]'>
-      <div className="absolute inset-0 bg-contain sm:bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760152582/KopouArtistsCollectionsIcon/Webp/phzrrzfpiwtwdwg4eaxe.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760148729/KopouArtistsCollectionsIcon/Webp/Banner5.webp')] opacity-60"></div>
+      <div className='absolute inset-0 bg-contain sm:bg-contain bgimage opacity-60'></div>
       <h2
         className='flex justify-center sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 mt-5 
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]

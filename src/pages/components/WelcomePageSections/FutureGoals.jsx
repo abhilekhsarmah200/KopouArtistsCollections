@@ -4,8 +4,11 @@ import Carousel from '../Carousel/Carousel';
 
 export default function FutureGoals() {
   return (
-    <div id='future-goals' className='relative sm:px-8 px-4 z-10 h-full py-10'>
-      <div className="absolute inset-0 bg-cover sm:bg-contain bgimage bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760014025/KopouArtistsCollectionsIcon/Webp/hobxygrxd0g8jose9sua.webp')] sm:bg-[url('https://res.cloudinary.com/dwkajs0ca/image/upload/v1760012721/KopouArtistsCollectionsIcon/Webp/Banner1.webp')] opacity-50"></div>
+    <div
+      id='future-goals'
+      className='relative sm:px-8 px-4 z-10 h-full py-4 md:py-10'
+    >
+      <div className='absolute inset-0 bg-cover sm:bg-contain bgimage bg-[#faf5ef] opacity-50'></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h2
           className='flex sm:gap-3 items-center text-2xl text-center md:text-5xl lg:text-6xl font-bold text-[#c23c23] mb-4 poppins-text

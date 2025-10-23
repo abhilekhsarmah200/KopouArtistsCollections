@@ -69,7 +69,7 @@ export default function Navbar() {
   return (
     <div className='fixed top-0 left-0 right-0 z-50'>
       <nav className='relative bg-[#faf5ef] shadow-2xl backdrop-blur-sm after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10'>
-        <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+        <div className='mx-auto max-w-7xl 2xl:max-w-[90%] px-2 sm:px-6 lg:px-8'>
           <div className='relative flex sm:h-[6rem] h-[5rem] items-center justify-between'>
             {/* Mobile menu button */}
             <div className='absolute inset-y-0 left-0 flex items-center sm:hidden z-20'>

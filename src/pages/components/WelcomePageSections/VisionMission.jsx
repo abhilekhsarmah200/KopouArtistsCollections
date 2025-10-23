@@ -17,8 +17,8 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         </h2>
 
         <div className='flex lg:flex-row flex-col-reverse text-black text-left lg:items-center items-center gap-2 mt-5'>
-          <div className='lg:max-w-xl sm:max-w-lg max-w-sm bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
-            <div className='relative md:h-full p-6 sm:p-10'>
+          <div className='w-full border border-[gray]/30 bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
+            <div className='relative 2xl:max-w-3xl lg:max-w-xl sm:max-w-lg max-w-sm md:h-full p-6 sm:p-10'>
               <div className='montserrat-text text-sm md:text-[1rem] lg:text-xl '>
                 Kopou Artist Collective's vision is to create a platform that
                 brings together talented artists, musicians, and creators from
@@ -31,12 +31,14 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
               </div>
             </div>
           </div>
-          <img
-            loading='lazy'
-            src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760001360/KopouArtistsCollectionsIcon/Webp/tgixzdtumjcgddghljs9.webp'
-            className=' md:h-[20rem] sm:h-[14rem] h-[10rem] md:w-[20rem] sm:w-[14rem] w-[10rem]'
-            alt='Kopou Artist Collective image'
-          />
+          <div className='w-full mx-auto'>
+            <img
+              loading='lazy'
+              src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760001360/KopouArtistsCollectionsIcon/Webp/tgixzdtumjcgddghljs9.webp'
+              className=' md:h-[20rem] sm:h-[14rem] h-[10rem] md:w-[20rem] sm:w-[14rem] w-[10rem] mx-auto'
+              alt='Kopou Artist Collective image'
+            />
+          </div>
         </div>
       </div>
     </div>

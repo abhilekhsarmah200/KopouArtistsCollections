@@ -55,13 +55,14 @@ const ResponsiveCarousel = () => {
       >
         {items.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className='bg-white shadow-sm rounded-xl overflow-hidden transition-transform hover:scale-[1.02] duration-300'>
+            <div className='bg-white shadow-sm border border-[gray]/30 rounded-xl overflow-hidden transition-transform hover:scale-[1.02] duration-300'>
               <img
                 src={item?.img}
                 alt={item?.alt}
                 title={`${item?.title} - ${item?.alt}`}
                 className='w-full md:h-[30rem] h-[23rem]'
               />
+
               <div className='poppins-text px-4 pt-4 text-center font-bold capitalize text-[#c23c23] text-[1.2rem] md:text-[1.5rem] lg:text-3xl'>
                 {item?.title}
               </div>

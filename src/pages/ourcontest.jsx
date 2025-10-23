@@ -25,7 +25,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)] poppins-text'
             />
           </div>
         </div> */}
-        <div className='max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[75%] z-5 bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 mx-auto'>
+        <div className='max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[75%] z-5 bg-white border border-[gray]/30 rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 mx-auto'>
           <div className='relative md:h-full p-6 sm:p-10'>
             <div className='text-sm md:text-xl lg:text-2xl montserrat-text'>
               Welcome to the{' '}
@@ -48,7 +48,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)] mt-5'
       >
         Our Winners
       </h2>
-      <div>
+      <div className='max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[75%] mx-auto'>
         <ResponsiveCarousel />
       </div>
     </div>

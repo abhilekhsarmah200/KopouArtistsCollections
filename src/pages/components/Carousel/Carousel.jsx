@@ -32,7 +32,7 @@ export default function Carousel({ data, component }) {
       <div className='relative w-full mx-auto max-w-lg md:max-w-2xl lg:max-w-xl sm:max-w-lg'>
         {/* Carousel Slides */}
         <div
-          className={`overflow-hidden rounded-xl ${
+          className={`overflow-hidden rounded-xl border border-[gray]/30 ${
             component === 'bulletin' && 'h-[100%] py-[3rem]'
           } bg-white backdrop-blur-sm shadow-sm`}
         >
@@ -99,7 +99,7 @@ export default function Carousel({ data, component }) {
           onClick={prevSlide}
           className={`${
             component === 'bulletin' ? 'block p-1' : 'block p-2 md:p-3'
-          }  cursor-pointer absolute left-2 top-1/2 md:left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-sm transition-all duration-200 hover:scale-110`}
+          }  cursor-pointer absolute left-2 top-1/2 md:left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-xl border border-[gray]/30 transition-all duration-200 hover:scale-110`}
           aria-label='Previous quote'
         >
           <svg
@@ -121,7 +121,7 @@ export default function Carousel({ data, component }) {
           onClick={nextSlide}
           className={`${
             component === 'bulletin' ? 'block p-1' : 'block p-2 md:p-3'
-          } cursor-pointer absolute right-2 top-1/2 md:right-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-sm transition-all duration-200 hover:scale-110`}
+          } cursor-pointer absolute right-2 top-1/2 md:right-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-xl border border-[gray]/30 transition-all duration-200 hover:scale-110`}
           aria-label='Next quote'
         >
           <svg

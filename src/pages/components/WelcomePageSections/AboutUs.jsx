@@ -23,7 +23,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
           About Us
         </h2>
-        <div className='max-w-lg shadow-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[75%] text-black bg-white rounded-xl p-8 text-left md:text-justify overflow-hidden'>
+        <div className='max-w-lg shadow-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[75%] text-black bg-white border border-[gray]/30 rounded-xl p-8 text-left md:text-justify overflow-hidden'>
           <div className='sm:float-right flex justify-center md:ml-8 ml-4 md:mb-6 mb-4 md:mt-2'>
             <img
               loading='lazy'

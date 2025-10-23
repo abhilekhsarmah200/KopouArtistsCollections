@@ -51,11 +51,11 @@ const ResponsiveCarousel = () => {
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className='rounded-2xl'
+        className='rounded-xl'
       >
         {items.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className='bg-white shadow-lg rounded-2xl overflow-hidden transition-transform hover:scale-[1.02] duration-300'>
+            <div className='bg-white shadow-sm rounded-xl overflow-hidden transition-transform hover:scale-[1.02] duration-300'>
               <img
                 src={item?.img}
                 alt={item?.alt}
@@ -76,14 +76,14 @@ const ResponsiveCarousel = () => {
       {/* Navigation Buttons */}
       <button
         ref={prevRef}
-        className='absolute cursor-pointer top-1/2 left-3 -translate-y-1/2 z-[60] bg-white/90 backdrop-blur-sm border border-gray-300 p-4 rounded-full shadow-lg text-gray-800 hover:bg-[#c23c23] hover:text-white transition duration-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100'
+        className='absolute cursor-pointer top-1/2 left-3 -translate-y-1/2 z-[60] bg-white/90 backdrop-blur-sm border border-gray-300 p-4 rounded-full shadow-sm text-gray-800 hover:bg-[#c23c23] hover:text-white transition duration-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100'
       >
         <ChevronLeft className='w-6 h-6' />
       </button>
 
       <button
         ref={nextRef}
-        className='absolute cursor-pointer top-1/2 right-3 -translate-y-1/2 z-[60] bg-white/90 backdrop-blur-sm border border-gray-300 p-4 rounded-full shadow-lg text-gray-800 hover:bg-[#c23c23] hover:text-white transition duration-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100'
+        className='absolute cursor-pointer top-1/2 right-3 -translate-y-1/2 z-[60] bg-white/90 backdrop-blur-sm border border-gray-300 p-4 rounded-full shadow-sm text-gray-800 hover:bg-[#c23c23] hover:text-white transition duration-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100'
       >
         <ChevronRight className='w-6 h-6' />
       </button>

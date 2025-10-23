@@ -17,7 +17,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         </h2>
 
         <div className='flex lg:flex-row flex-col-reverse text-black text-left lg:items-center items-center gap-2 mt-5'>
-          <div className='lg:max-w-xl sm:max-w-lg max-w-sm bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
+          <div className='lg:max-w-xl sm:max-w-lg max-w-sm bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
             <div className='relative md:h-full p-6 sm:p-10'>
               <div className='montserrat-text text-sm md:text-[1rem] lg:text-xl '>
                 Kopou Artist Collective's vision is to create a platform that

@@ -42,7 +42,7 @@ export default function Popup() {
         <div className='relative p-6'>
           <button
             onClick={closePopup}
-            className='absolute -top-3 -right-3 text-[#c23c23] border border-[#c23c23] hover:text-white transition-all duration-300 p-2 rounded-full hover:bg-[#c23c23] cursor-pointer bg-white shadow-lg z-10 hover:scale-110 active:scale-95'
+            className='absolute -top-3 -right-3 text-[#c23c23] border border-[#c23c23] hover:text-white transition-all duration-300 p-2 rounded-full hover:bg-[#c23c23] cursor-pointer bg-white shadow-sm z-10 hover:scale-110 active:scale-95'
           >
             <X size={20} />
           </button>

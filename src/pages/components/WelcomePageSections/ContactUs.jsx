@@ -16,7 +16,7 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
           Connect With Us
         </h2>
-        <div className='max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[100%] flex lg:flex-row flex-col bg-white rounded-lg shadow-md mt-5'>
+        <div className='max-w-2xl lg:max-w-4xl xl:max-w-6xl 4xl:max-w-[100%] flex lg:flex-row flex-col bg-white rounded-xl shadow-sm mt-5'>
           <div className='w-full p-6 pb-0 lg:pb-6 flex flex-col gap-2 justify-center'>
             <h2 className='text-left md:px-4 text-[1.2rem] md:text-[1.5rem] lg:text-[1.6rem] text-[#c23c23] font-bold poppins-text'>
               Contact Form

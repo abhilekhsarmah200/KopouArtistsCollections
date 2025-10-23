@@ -12,7 +12,7 @@ export default function Custom404() {
         <title>Kopou Artist Collective | Page Not Found</title>
       </Head>
 
-      <div className='relative min-h-screen flex items-center justify-center p-4'>
+      <div className='relative bg-[#faf5ef] min-h-screen flex items-center justify-center p-4'>
         <div className='absolute inset-0 bg-contain sm:bg-contain bgimage opacity-50'></div>
         <div className='bg-white rounded-2xl shadow-xl p-8 max-w-md w-full text-center z-10'>
           <div className='animate-pulse w-24 h-24 mx-auto mb-6 bg-red-100 rounded-full flex items-center justify-center'>

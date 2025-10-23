@@ -21,7 +21,7 @@ export default function Document() {
         <meta
           name='google-site-verification'
           content='JAxJFQLMJhM4KtOp4tSwF-9VLzBdTJQcSYwEGAoytpk'
-        />
+        /> 
 
         {/* Bing Site Verification */}
         <meta name='msvalidate.01' content='A02E9F95937DDCC6EADA821108194993' />

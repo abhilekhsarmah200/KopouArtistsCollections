@@ -79,7 +79,7 @@ const FeedbackForm = () => {
   const showRating = formData.subject === 'feedback';
 
   return (
-    <div className=' mx-auto p-6 montserrat-text text-sm md:text-xl lg:text-2xl'>
+    <div className=' mx-auto p-6 montserrat-text text-sm md:text-[1rem]'>
       {/* <h2 className='text-lg md:text-xl lg:text-2xl font-bold mb-6 text-[#c23c23] poppins-text'>
         Send Us Feedback
       </h2> */}
@@ -112,7 +112,7 @@ const FeedbackForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
+              className='mt-1 block w-full px-3 py-2 text-sm md:text-[1rem] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
             />
           </div>
 
@@ -130,7 +130,7 @@ const FeedbackForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
+              className='mt-1 block w-full px-3 py-2 text-sm md:text-[1rem] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
             />
           </div>
         </div>
@@ -149,7 +149,7 @@ const FeedbackForm = () => {
               value={formData.subject}
               onChange={handleChange}
               required
-              className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
+              className='mt-1 block w-full px-3 py-2 text-sm md:text-[1rem] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
             >
               <option value='feedback'>Feedback</option>
               <option value='general'>General Inquiry</option>
@@ -172,7 +172,7 @@ const FeedbackForm = () => {
                 name='rating'
                 value={formData.rating}
                 onChange={handleChange}
-                className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
+                className='mt-1 block w-full px-3 py-2 text-sm md:text-[1rem] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
               >
                 <option value='1'>1 - Poor</option>
                 <option value='2'>2 - Fair</option>
@@ -198,7 +198,7 @@ const FeedbackForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
+            className='mt-1 block w-full px-3 py-2 text-sm md:text-[1rem] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
           ></textarea>
         </div>
 

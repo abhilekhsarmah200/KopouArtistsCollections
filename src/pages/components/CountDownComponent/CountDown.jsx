@@ -59,7 +59,7 @@ export default function CountdownTimer() {
     <div className='relative z-20 flex flex-col items-center justify-center text-center py-8 transition-all duration-700 ease-in-out'>
       {!isFinished ? (
         <>
-          <div className='lg:max-w-xl z-5 sm:max-w-lg max-w-sm bg-white md:bg-transparent rounded-xl shadow-lg md:shadow-none hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
+          <div className='lg:max-w-xl z-5 sm:max-w-lg max-w-sm bg-white md:bg-transparent rounded-xl shadow-sm md:shadow-none hover:shadow-2xl transition-all duration-300 hover:-translate-y-2'>
             <div className='relative md:h-full p-6 sm:p-10'>
               <h2 className='ext-base md:text-lg lg:text-xl text-center px-[3rem] font-semibold text-[black] poppins-text'>
                 ⏰ Countdown to <b className='text-[#c23c23]'>1:30 PM!</b> Our

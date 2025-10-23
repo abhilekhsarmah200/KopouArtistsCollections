@@ -60,7 +60,7 @@ export default function Navbar() {
       : 'rounded-md md:px-2 px-2 py-2 text-sm font-[600] transition-all duration-200 ease-in-out cursor-pointer';
 
     if (isActive) {
-      return `${baseClasses} bg-[#c23c23] text-white shadow-lg shadow-gray-600/25`;
+      return `${baseClasses} bg-[#c23c23] text-white shadow-sm shadow-gray-600/25`;
     } else {
       return `${baseClasses} w-full sm:w-auto text-left text-[#c23c23] hover:bg-white/10 hover:text-[#c23c23]/50`;
     }

@@ -21,7 +21,7 @@ export default function Document() {
         <meta
           name='google-site-verification'
           content='JAxJFQLMJhM4KtOp4tSwF-9VLzBdTJQcSYwEGAoytpk'
-        /> 
+        />
 
         {/* Bing Site Verification */}
         <meta name='msvalidate.01' content='A02E9F95937DDCC6EADA821108194993' />
@@ -95,6 +95,12 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
           rel='stylesheet'
         />
+        {/* Google adsense */}
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8339531004125808'
+          crossOrigin='anonymous'
+        ></script>
       </Head>
       <body>
         <Main />

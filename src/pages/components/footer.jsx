@@ -138,15 +138,15 @@ export default function Footer() {
         <div className='container mx-auto flex flex-col gap-2 items-center justify-center mt-8 border-t w-full montserrat-text border-[#c23c23] pt-5 text-center'>
           <div className='text-sm text-[#c23c23] font-bold'>
             © {new Date().getFullYear()} Kopou Artist Collective. All rights
-            reserved by{' '}
+            reserved.
+            {/* reserved by{' '}
             <a
               target='_blank'
               href='https://in.bold.pro/my/abhilekh-sarmah01'
               className='font-extrabold underline'
             >
               Abhilekh Sarmah
-            </a>
-            .
+            </a> */}
           </div>
           <GovtRegistrationBadge />
         </div>

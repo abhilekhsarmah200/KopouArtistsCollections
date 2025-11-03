@@ -37,7 +37,7 @@ export default function VideoCarousel({ videos, title, onBack }) {
         }}
         className='w-full max-w-6xl'
       >
-        {videos.map((url, index) => (
+        {videos?.map((url, index) => (
           <SwiperSlide key={index}>
             <div className='rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white'>
               <iframe

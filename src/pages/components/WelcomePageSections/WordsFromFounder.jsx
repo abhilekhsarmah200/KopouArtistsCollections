@@ -33,6 +33,12 @@ export default function WordsFromFounder() {
       position: 'Graphic Designer',
       img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172554/KopouArtistsCollectionsIcon/KopouTeam/onktzejghufjjumtylvs.webp',
     },
+    {
+      id: 6,
+      author: 'Himan Sharma',
+      position: 'Video Editor',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762186012/KopouArtistsCollectionsIcon/KopouTeam/dww2dcjevnvzyrvj1hyf.webp',
+    },
   ];
   return (
     <div

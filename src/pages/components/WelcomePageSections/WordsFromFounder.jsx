@@ -5,7 +5,7 @@ export default function WordsFromFounder() {
   const founderQuotes = [
     {
       id: 1,
-      author: 'Sayahna Sandhya Kaushik',
+      author: 'Sayahna Sandhya',
       position: 'Founder',
       img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172555/KopouArtistsCollectionsIcon/KopouTeam/vltg2iefhm1h8dowinm4.webp',
     },

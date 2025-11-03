@@ -156,6 +156,7 @@ const FeedbackForm = () => {
               <option value='sponsorship'>Sponsorship</option>
               <option value='complaint'>Complaint</option>
               <option value='suggestion'>Suggestion</option>
+              <option value='promote'>Promote Yourself</option>
             </select>
           </div>
 

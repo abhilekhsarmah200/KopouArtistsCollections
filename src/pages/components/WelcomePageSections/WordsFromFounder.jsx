@@ -5,17 +5,39 @@ export default function WordsFromFounder() {
   const founderQuotes = [
     {
       id: 1,
-      text: 'Kopou Artist Collective is built on the belief that art thrives in unity. Together, we celebrate creativity, culture, and collaboration',
-      author: 'Sayahna Sandhya Kaushik',
+      author: 'Sayahna Sandhya',
       position: 'Founder',
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1760002643/KopouArtistsCollectionsIcon/Webp/kl0teiiddhwbbemcikei.webp',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172555/KopouArtistsCollectionsIcon/KopouTeam/vltg2iefhm1h8dowinm4.webp',
     },
     {
       id: 2,
-      text: 'Kopou Artist Collective is more than a management platform — it’s a movement that celebrates originality, hard work, and the power of togetherness in the creative world',
       author: 'Bhargav Dutta',
       position: 'Creative-Founder',
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1760002643/KopouArtistsCollectionsIcon/Webp/fmae9tar6wgpr0pvlavb.webp',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172555/KopouArtistsCollectionsIcon/KopouTeam/xk6gf4h0ksfao3iv9qpe.webp',
+    },
+    {
+      id: 3,
+      author: 'Abhilekh Sarmah',
+      position: 'Web Developer',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762173219/KopouArtistsCollectionsIcon/KopouTeam/qm2kt2u1ztcxuf1nd7n9.webp',
+    },
+    {
+      id: 4,
+      author: 'Velentina Gogoi',
+      position: 'Social Media Associate',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172554/KopouArtistsCollectionsIcon/KopouTeam/w5e67aofxbjp3a4bfdij.webp',
+    },
+    {
+      id: 5,
+      author: 'Shiva Dey',
+      position: 'Graphic Designer',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172554/KopouArtistsCollectionsIcon/KopouTeam/onktzejghufjjumtylvs.webp',
+    },
+    {
+      id: 6,
+      author: 'Himan Sharma',
+      position: 'Video Editor',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762186012/KopouArtistsCollectionsIcon/KopouTeam/dww2dcjevnvzyrvj1hyf.webp',
     },
   ];
   return (
@@ -30,14 +52,7 @@ export default function WordsFromFounder() {
 [text-shadow:2px_0_0_white,-2px_0_0_white,0_2px_0_white,0_-2px_0_white,1px_1px_white,-1px_-1px_white,-1px_1px_white,1px_-1px_white]
 drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
         >
-          Words From the Founders
-          <img
-            title='Kopou Artist Collective icons'
-            loading='lazy'
-            alt='Kopou Artist Collective image'
-            src={`https://res.cloudinary.com/dwkajs0ca/image/upload/v1759920322/KopouArtistsCollectionsIcon/k4i9fg8gbftcjjobw4fj.png`}
-            className='lg:h-20 sm:h-16 h-10 transform rotate-12 text-[#c23c23]'
-          />
+          Meet Our Team
         </h2>
         <div className='pt-5'>
           <Carousel data={founderQuotes} />

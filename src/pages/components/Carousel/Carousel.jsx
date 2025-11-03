@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export default function Carousel({ data, component }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,26 +15,15 @@ export default function Carousel({ data, component }) {
     setCurrentSlide(index);
   };
 
-  // Auto-rotate slides every 5 seconds, except for bulletin
-  useEffect(() => {
-    // Only set up auto-rotate if component is NOT 'bulletin'
-    if (component !== 'bulletin') {
-      const interval = setInterval(() => {
-        nextSlide();
-      }, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [component]); // Add component to dependency array
-
   return (
-    <div>
+    <div className='w-full px-3 sm:px-4 md:px-6 lg:px-8'>
       {/* Carousel Container */}
-      <div className='relative w-full mx-auto max-w-lg md:max-w-2xl lg:max-w-xl sm:max-w-lg'>
+      <div className='relative w-full mx-auto max-w-[90vw] sm:max-w-lg md:max-w-2xl lg:max-w-3xl'>
         {/* Carousel Slides */}
         <div
-          className={`overflow-hidden rounded-xl border border-[gray]/30 ${
-            component === 'bulletin' && 'h-[100%] py-[3rem]'
-          } bg-white backdrop-blur-sm shadow-sm`}
+          className={`overflow-hidden rounded-xl border border-gray-300 ${
+            component === 'bulletin' ? 'h-auto py-6 sm:py-10' : 'bg-white'
+          } backdrop-blur-sm shadow-sm`}
         >
           <div
             className='flex transition-transform duration-500 ease-in-out'
@@ -42,51 +31,52 @@ export default function Carousel({ data, component }) {
           >
             {data?.map((quote, index) => (
               <div
-                key={quote?.id}
-                className={`w-full flex-shrink-0 ${
-                  quote?.title ? 'px-6 py-6' : 'px-6 py-10 md:px-16 md:py-20'
+                key={quote?.id || index}
+                className={`w-full flex-shrink-0 px-4 sm:px-6 md:px-10 py-6 sm:py-10 ${
+                  quote?.title ? '' : 'md:py-16'
                 }`}
               >
-                <div className='max-w-3xl mx-auto'>
-                  {/* Quote Icon */}
-
+                <div className='max-w-3xl mx-auto text-center'>
+                  {/* Image */}
                   {quote?.img && (
-                    <div className='text-6xl text-center text-[#c23c23] mb-6'>
-                      <img
-                        loading='lazy'
-                        src={quote?.img}
-                        className='lg:h-[16rem] lg:w-[16rem] sm:h-[12rem] sm:w-[12rem] h-[8rem] w-[8rem] mx-auto rounded-full border border-white shadow-neutral-400 shadow-2xl'
-                        alt={`Kopou Artist Collective's Founders`}
-                        title={`Kopou Artist Collective | ${quote?.author}`}
-                      />
+                    <div className='flex justify-center mb-4 sm:mb-6'>
+                      <div className='relative rounded-full border border-white shadow-lg overflow-hidden h-[6rem] w-[6rem] sm:h-[8rem] sm:w-[8rem] md:h-[10rem] md:w-[10rem] lg:h-[12rem] lg:w-[12rem]'>
+                        <img
+                          loading='lazy'
+                          src={quote?.img}
+                          alt={quote?.author}
+                          className='object-cover w-full h-full rounded-full'
+                        />
+                      </div>
                     </div>
                   )}
+
+                  {/* Title */}
                   {quote?.title && (
-                    <p className='poppins-text font-bold px-2 text-[1.2rem] md:text-[1.5rem] lg:text-3xl text-[#c23c23]'>
+                    <p className='poppins-text font-bold text-[1.1rem] sm:text-[1.3rem] md:text-[1.5rem] lg:text-3xl text-[#c23c23] mb-3'>
                       {quote?.title}
                     </p>
                   )}
+
                   {/* Quote Text */}
-                  <p
-                    className={`montserrat-text text-sm md:text-[1rem] lg:text-xl text-gray-800 font-light ${
-                      quote?.content ? 'mb-0 px-2' : 'mb-8'
-                    }`}
-                  >
+                  <p className='montserrat-text text-gray-800 font-light text-[0.9rem] sm:text-[1rem] md:text-lg leading-relaxed px-1 sm:px-2 mb-4 sm:mb-6'>
                     {quote?.text || quote?.content}
                   </p>
 
                   {/* Author */}
                   <div
                     className={`${
-                      quote?.title ? 'Border-0' : 'border-t'
-                    } "border-gray-300 pt-6"`}
+                      quote?.title ? 'border-0' : 'border-t border-gray-300'
+                    } pt-4 sm:pt-6`}
                   >
-                    <p className='poppins-text text-[1.2rem] md:text-[1.5rem] lg:text-3xl font-bold text-[#c23c23]'>
+                    <p className='poppins-text text-[1.1rem] sm:text-[1.3rem] md:text-[1.5rem] font-bold text-[#c23c23]'>
                       {quote?.author}
                     </p>
-                    <p className='montserrat-text text-sm md:text-[1rem] lg:text-xl text-gray-600 mt-1'>
-                      {quote?.position}
-                    </p>
+                    {quote?.position && (
+                      <p className='montserrat-text text-gray-600 text-[0.9rem] sm:text-[1rem] md:text-lg mt-1'>
+                        {quote?.position}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -97,13 +87,11 @@ export default function Carousel({ data, component }) {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className={`${
-            component === 'bulletin' ? 'block p-1' : 'block p-2 md:p-3'
-          }  cursor-pointer absolute left-2 top-1/2 md:left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-xl border border-[gray]/30 transition-all duration-200 hover:scale-110`}
-          aria-label='Previous quote'
+          className='absolute cursor-pointer left-1 sm:left-3 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-[#c23c23] rounded-full shadow-lg border border-gray-300 transition-all duration-200 hover:scale-110 p-1 sm:p-2 md:p-3'
+          aria-label='Previous slide'
         >
           <svg
-            className='w-6 h-6 md:w-8 md:h-8'
+            className='w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6'
             fill='none'
             stroke='currentColor'
             viewBox='0 0 24 24'
@@ -119,13 +107,11 @@ export default function Carousel({ data, component }) {
 
         <button
           onClick={nextSlide}
-          className={`${
-            component === 'bulletin' ? 'block p-1' : 'block p-2 md:p-3'
-          } cursor-pointer absolute right-2 top-1/2 md:right-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-[#c23c23] rounded-full shadow-xl border border-[gray]/30 transition-all duration-200 hover:scale-110`}
-          aria-label='Next quote'
+          className='absolute cursor-pointer right-1 sm:right-3 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-[#c23c23] rounded-full shadow-lg border border-gray-300 transition-all duration-200 hover:scale-110 p-1 sm:p-2 md:p-3'
+          aria-label='Next slide'
         >
           <svg
-            className='w-6 h-6 md:w-8 md:h-8'
+            className='w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6'
             fill='none'
             stroke='currentColor'
             viewBox='0 0 24 24'
@@ -141,12 +127,12 @@ export default function Carousel({ data, component }) {
 
         {/* Dots Indicator */}
         {component !== 'bulletin' && (
-          <div className='flex justify-center mt-8 space-x-3'>
+          <div className='flex justify-center mt-4 sm:mt-6 space-x-2 sm:space-x-3'>
             {data?.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 cursor-pointer rounded-full transition-all duration-300 ${
+                className={`w-2.5 h-2.5 sm:w-3 cursor-pointer sm:h-3 rounded-full transition-all duration-300 ${
                   index === currentSlide
                     ? 'bg-[#c23c23] scale-125'
                     : 'bg-gray-400 hover:bg-gray-600'

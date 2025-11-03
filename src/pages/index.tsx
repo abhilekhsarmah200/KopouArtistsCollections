@@ -6,7 +6,6 @@ import FutureGoals from './components/WelcomePageSections/FutureGoals';
 import CoreTopics from './components/WelcomePageSections/CoreTopics';
 import AboutUs from './components/WelcomePageSections/AboutUs';
 import WordsFromFounder from './components/WelcomePageSections/WordsFromFounder';
-import ContactUs from './components/WelcomePageSections/ContactUs';
 import Head from 'next/head';
 
 export default function index() {
@@ -23,7 +22,6 @@ export default function index() {
         <FutureGoals />
         <AboutUs />
         <WordsFromFounder />
-        <ContactUs />
       </div>
     </>
   );

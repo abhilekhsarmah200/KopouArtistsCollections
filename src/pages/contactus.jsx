@@ -1,12 +1,9 @@
 import React from 'react';
-import ContactUsForm from '../contactUsForm/ContactUsForm';
+import ContactUsForm from './components/contactUsForm/ContactUsForm';
 
 export default function ContactUs() {
   return (
-    <div
-      id='contactus'
-      className='relative sm:px-8 px-4 z-10 h-full py-4 md:py-10'
-    >
+    <div className='relative sm:px-8 px-4 z-10 h-full py-10 mt-[4rem]'>
       <div className='absolute inset-0 bg-contain sm:bg-contain bgimage bg-[#faf5ef] opacity-50'></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>
         <h2

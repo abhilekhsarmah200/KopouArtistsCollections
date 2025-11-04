@@ -46,10 +46,13 @@ export default function Popup() {
           >
             <X size={20} />
           </button>
+          <h3 className='text-xl uppercase poppins-text font-bold text-[#c23c23] text-center mb-4'>
+            Upcoming Event
+          </h3>
 
           <img
             title='Announcement'
-            src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1760585458/KopouArtistsCollectionsIcon/Webp/kujy6c17q3xw6slmxpqo.webp'
+            src='https://res.cloudinary.com/dwkajs0ca/image/upload/v1762241448/KopouArtistsCollectionsIcon/Webp/uenxsgoaoz4hvmr30irb.webp'
             alt='Kopou for Artists Popup'
             loading='lazy'
             className='w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105'

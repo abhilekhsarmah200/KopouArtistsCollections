@@ -10,9 +10,12 @@ export default function Navbar() {
 
   const navLinks = [
     { id: 'home', label: 'Home', href: '#home' },
-    // { id: 'benefits', label: 'Benefits', href: '#benefits' },
-    { id: 'goals', label: 'Future Goals', href: '#future-goals' },
-    { id: 'about', label: 'About Us', href: '#about' },
+    {
+      id: 'kopouconnect',
+      label: 'Kopou Connect',
+      href: '/kopouconnect',
+      isExternal: true,
+    },
     {
       id: 'activities',
       label: 'Activities',
@@ -25,6 +28,7 @@ export default function Navbar() {
       href: '/ourcontest',
       isExternal: true,
     },
+    { id: 'about', label: 'About Us', href: '#about' },
     {
       id: 'contact',
       label: 'Contact Us',

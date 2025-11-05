@@ -12,14 +12,14 @@ export default function kopou2026() {
     },
     {
       id: 2,
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762359962/KopouArtistsCollectionsIcon/Webp/ryooqnspugnce7mvmev7.jpg',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762360651/KopouArtistsCollectionsIcon/Webp/qpwgini7ezwfnppfjejl.jpg',
       alt: 'Coming Soon',
       className:
         'rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer lg:h-[30rem] md:h-[25rem] h-[20rem]  w-full animate-pulse',
     },
     {
       id: 3,
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762359962/KopouArtistsCollectionsIcon/Webp/ryooqnspugnce7mvmev7.jpg',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762360651/KopouArtistsCollectionsIcon/Webp/qpwgini7ezwfnppfjejl.jpg',
       alt: 'Coming Soon',
       className:
         'rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer lg:h-[30rem] md:h-[25rem] h-[20rem]  w-full animate-pulse',

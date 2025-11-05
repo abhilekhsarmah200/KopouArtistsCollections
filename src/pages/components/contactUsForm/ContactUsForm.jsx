@@ -152,11 +152,14 @@ const FeedbackForm = () => {
               className='mt-1 block w-full px-3 py-2 text-sm md:text-[1rem] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#c23c23] focus:border-[#c23c23]'
             >
               <option value='feedback'>Feedback</option>
-              <option value='general'>General Inquiry</option>
+              <option value='general inquiry'>General Inquiry</option>
               <option value='sponsorship'>Sponsorship</option>
               <option value='complaint'>Complaint</option>
               <option value='suggestion'>Suggestion</option>
-              <option value='promote'>Promote Yourself</option>
+              <option value='promote yourself'>Promote Yourself</option>
+              <option value='solo singing registration'>
+                Solo Singing Registration
+              </option>
             </select>
           </div>
 

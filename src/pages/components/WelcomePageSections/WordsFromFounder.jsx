@@ -6,7 +6,7 @@ export default function WordsFromFounder() {
     {
       id: 1,
       author: 'Sayahna Sandhya',
-      position: 'Founder',
+      position: 'Founder & Social Media Head',
       img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172555/KopouArtistsCollectionsIcon/KopouTeam/vltg2iefhm1h8dowinm4.webp',
     },
     {

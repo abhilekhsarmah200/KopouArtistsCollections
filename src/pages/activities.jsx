@@ -1,9 +1,13 @@
 import React from 'react';
 import VideoCarousel from './components/Carousel/CustomCarousel/CustomResponsiveCarousel';
+import Head from 'next/head';
 
 export default function activities() {
   return (
     <>
+      <Head>
+        <title>Kopou Activities</title>
+      </Head>
       <div className='relative sm:px-8 px-4 z-10 h-full py-10 mt-[4rem]'>
         <div className='absolute inset-0 bg-cover sm:bg-contain bgimage bg-[#faf5ef] opacity-60'></div>
         <div className='relative flex flex-col items-center justify-center h-full text-center'>

@@ -40,7 +40,7 @@ export default function Carousel({ data, component }) {
                   {/* Image */}
                   {quote?.img && (
                     <div className='flex justify-center mb-4 sm:mb-6'>
-                      <div className='relative rounded-full border border-white shadow-lg overflow-hidden h-[6rem] w-[6rem] sm:h-[8rem] sm:w-[8rem] md:h-[10rem] md:w-[10rem] lg:h-[12rem] lg:w-[12rem]'>
+                      <div className='relative rounded-full border border-white shadow-lg overflow-hidden h-[8rem] w-[8rem] md:h-[10rem] md:w-[10rem] lg:h-[12rem] lg:w-[12rem]'>
                         <img
                           loading='lazy'
                           src={quote?.img}
@@ -69,7 +69,7 @@ export default function Carousel({ data, component }) {
                       quote?.title ? 'border-0' : 'border-t border-gray-300'
                     } pt-4 sm:pt-6`}
                   >
-                    <p className='poppins-text text-[1.1rem] sm:text-[1.3rem] md:text-[1.5rem] font-bold text-[#c23c23]'>
+                    <p className='poppins-text uppercase text-[1.1rem] sm:text-[1.3rem] md:text-[1.5rem] font-bold text-[#c23c23]'>
                       {quote?.author}
                     </p>
                     {quote?.position && (

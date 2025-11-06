@@ -39,6 +39,12 @@ export default function WordsFromFounder() {
       position: 'Video Editor',
       img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762186012/KopouArtistsCollectionsIcon/KopouTeam/dww2dcjevnvzyrvj1hyf.webp',
     },
+    {
+      id: 7,
+      author: 'Prastuti Das',
+      position: 'Content Creator',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762441598/KopouArtistsCollectionsIcon/Webp/f5w9j4x9b752vm2erv72.webp',
+    },
   ];
   return (
     <div

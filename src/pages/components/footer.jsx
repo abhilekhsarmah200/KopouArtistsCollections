@@ -115,7 +115,7 @@ export default function Footer() {
                 <X />
               </a> */}
               <a
-                href='https://linkedin.com'
+                href='https://www.linkedin.com/in/sayahna-sandhya-37b90b240/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='p-2 bg-[#c23c23] rounded-full hover:bg-[#0a66c2] transition'

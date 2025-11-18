@@ -6,7 +6,7 @@ const FeedbackForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: 'feedback',
+    subject: 'solo singing registration',
     message: '',
     rating: 5,
   });
@@ -62,7 +62,7 @@ const FeedbackForm = () => {
         setFormData({
           name: '',
           email: '',
-          subject: 'feedback',
+          subject: 'solo singing registration',
           message: '',
           rating: 5,
         });
@@ -141,7 +141,7 @@ const FeedbackForm = () => {
               htmlFor='subject'
               className='block text-sm font-medium text-gray-700 text-left'
             >
-              Subject
+              Select Subject
             </label>
             <select
               id='subject'

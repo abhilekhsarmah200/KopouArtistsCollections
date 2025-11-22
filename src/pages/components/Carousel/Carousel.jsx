@@ -61,6 +61,11 @@ export default function Carousel({ data, component }) {
                   {/* Quote Text */}
                   <p className='montserrat-text text-gray-800 font-light text-[0.9rem] sm:text-[1rem] md:text-lg leading-relaxed px-1 sm:px-2 mb-4 sm:mb-6'>
                     {quote?.text || quote?.content}
+                    {quote?.points?.map((item, index) => (
+                      <li key={index} className='text-[0.7rem] sm:text-[1rem]'>
+                        <i>{item}</i>
+                      </li>
+                    ))}
                   </p>
 
                   {/* Author */}

@@ -13,7 +13,7 @@ export default function WordsFromFounder() {
       id: 2,
       author: 'Bhargav Dutta',
       position: 'Creative-Founder',
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762241448/KopouArtistsCollectionsIcon/KopouTeam/ujjrdm2p00i52gaaqosj.webp',
+      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1763823350/KopouArtistsCollectionsIcon/KopouTeam/aos1qthjjw3eeqmojhid.webp',
     },
     {
       id: 3,

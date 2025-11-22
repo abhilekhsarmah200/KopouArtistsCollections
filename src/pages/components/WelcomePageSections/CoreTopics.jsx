@@ -26,6 +26,14 @@ drop-shadow-[0_0_25px_rgba(255,255,255,1)]'
                 </h2>
                 <div className='montserrat-text text-sm md:text-[1rem] lg:text-xl'>
                   {data?.content}
+                  {data?.points?.map((item, index) => (
+                    <li
+                      key={index}
+                      className='text-[7rem] md:text-[0.8rem] lg:text-[1rem]'
+                    >
+                      <i>{item}</i>
+                    </li>
+                  ))}
                 </div>
               </div>
             </div>

@@ -2,13 +2,16 @@ import { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Loader2Icon } from 'lucide-react';
 
+const TICKET_PRICE = 799;
+
 export default function BookingModal({ close }) {
   const [form, setForm] = useState({
     name: '',
     email: '',
     phone: '',
     event: 'Seedhe Maut Live Concert',
-    price: 799,
+    quantity: 1,
+    price: TICKET_PRICE,
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -23,15 +26,27 @@ export default function BookingModal({ close }) {
   function handleChange(e) {
     const { name, value } = e.target;
 
-    // Phone: digits only, max 10
+    // Phone validation
     if (name === 'phone') {
       if (!/^\d*$/.test(value)) return;
       if (value.length > 10) return;
     }
 
-    // Email: allow only valid characters
-    if (name === 'email') {
-      if (value.includes(' ')) return;
+    // Email validation
+    if (name === 'email' && value.includes(' ')) return;
+
+    // Quantity validation (1–10)
+    if (name === 'quantity') {
+      if (!/^\d*$/.test(value)) return;
+      const qty = Number(value);
+      if (qty < 1 || qty > 10) return;
+
+      setForm((prev) => ({
+        ...prev,
+        quantity: qty,
+        price: qty * TICKET_PRICE,
+      }));
+      return;
     }
 
     setForm({ ...form, [name]: value });
@@ -68,8 +83,9 @@ export default function BookingModal({ close }) {
           from_email: form.email,
           subject: 'Ticket Booking',
           phone: form.phone,
-          price: form.price,
           event: form.event,
+          quantity: form.quantity,
+          price: form.price,
           message: `
 New Ticket Booking:
 
@@ -77,11 +93,10 @@ Name: ${form.name}
 Email: ${form.email}
 Phone: ${form.phone}
 Event: ${form.event}
-Price: ${form.price}
+Tickets: ${form.quantity}
+Total Price: ₹${form.price}
 Date: ${getCurrentDateTime()}
           `,
-          rating: '* no rating... *',
-          show_rating: false,
           current_date: getCurrentDateTime(),
           to_email: 'kopoucollectives@gmail.com',
         },
@@ -90,13 +105,6 @@ Date: ${getCurrentDateTime()}
 
       if (result.status === 200) {
         setSubmitted(true);
-        setForm({
-          name: '',
-          email: '',
-          phone: '',
-          event: form.event,
-          price: form.price,
-        });
       }
     } catch (err) {
       console.error(err);
@@ -125,7 +133,7 @@ Date: ${getCurrentDateTime()}
         {!submitted ? (
           <>
             <h2 className='text-2xl font-bold mb-4'>
-              Hurry🔥!!Book Your Ticket
+              Hurry 🔥 Book Your Ticket
             </h2>
 
             {error && (
@@ -168,14 +176,27 @@ Date: ${getCurrentDateTime()}
               />
 
               <input
+                name='quantity'
+                type='number'
+                min='1'
+                max='10'
+                required
+                placeholder='Number of Tickets'
+                className='w-full border p-3 rounded'
+                value={form.quantity}
+                onChange={handleChange}
+              />
+
+              <input
                 value={form.event}
                 disabled
                 className='w-full border p-3 rounded bg-gray-100'
               />
+
               <input
-                value={`₹ ${form.price}/-`}
+                value={`₹ ${form.price.toLocaleString('en-IN')} /-`}
                 disabled
-                className='w-full border p-3 rounded bg-gray-100'
+                className='w-full border p-3 rounded bg-gray-100 font-bold'
               />
 
               <button

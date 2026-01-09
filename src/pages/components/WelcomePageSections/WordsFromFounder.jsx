@@ -49,7 +49,7 @@ export default function WordsFromFounder() {
   return (
     <div
       id='wordsfromfounder'
-      className='relative sm:px-8 px-4 z-10 h-full py-4 md:py-10'
+      className='relative sm:px-8 px-4 h-full py-4 md:py-10'
     >
       <div className='absolute inset-0 bg-contain xs:bg-cover sm:bg-contain bg-[#faf5ef] opacity-50'></div>
       <div className='relative flex flex-col items-center justify-center h-full text-center'>

@@ -6,6 +6,7 @@ import FutureGoals from './components/WelcomePageSections/FutureGoals';
 import CoreTopics from './components/WelcomePageSections/CoreTopics';
 import AboutUs from './components/WelcomePageSections/AboutUs';
 import WordsFromFounder from './components/WelcomePageSections/WordsFromFounder';
+import UpcomingEvents from './components/WelcomePageSections/UpcomingEvents';
 import Head from 'next/head';
 
 export default function index() {
@@ -16,6 +17,7 @@ export default function index() {
       </Head>
       <div>
         <HomePage />
+        <UpcomingEvents />
         <VisionMission />
         <Benefits />
         <CoreTopics />

@@ -23,6 +23,21 @@ export default function BookingModal({ close }) {
     return () => (document.body.style.overflow = 'auto');
   }, []);
 
+  // Increase / Decrease quantity
+  function increaseQty() {
+    if (form.quantity < 10) {
+      const qty = form.quantity + 1;
+      setForm({ ...form, quantity: qty, price: qty * TICKET_PRICE });
+    }
+  }
+
+  function decreaseQty() {
+    if (form.quantity > 1) {
+      const qty = form.quantity - 1;
+      setForm({ ...form, quantity: qty, price: qty * TICKET_PRICE });
+    }
+  }
+
   function handleChange(e) {
     const { name, value } = e.target;
 
@@ -34,20 +49,6 @@ export default function BookingModal({ close }) {
 
     // Email validation
     if (name === 'email' && value.includes(' ')) return;
-
-    // Quantity validation (1–10)
-    if (name === 'quantity') {
-      if (!/^\d*$/.test(value)) return;
-      const qty = Number(value);
-      if (qty < 1 || qty > 10) return;
-
-      setForm((prev) => ({
-        ...prev,
-        quantity: qty,
-        price: qty * TICKET_PRICE,
-      }));
-      return;
-    }
 
     setForm({ ...form, [name]: value });
   }
@@ -81,10 +82,10 @@ export default function BookingModal({ close }) {
         {
           from_name: form.name,
           from_email: form.email,
-          subject: 'Ticket Booking',
           phone: form.phone,
           event: form.event,
           quantity: form.quantity,
+          subject: 'Ticket Booking',
           price: form.price,
           message: `
 New Ticket Booking:
@@ -97,7 +98,6 @@ Tickets: ${form.quantity}
 Total Price: ₹${form.price}
 Date: ${getCurrentDateTime()}
           `,
-          current_date: getCurrentDateTime(),
           to_email: 'kopoucollectives@gmail.com',
         },
         'dnwApwImSCR1tMQ9D'
@@ -121,7 +121,7 @@ Date: ${getCurrentDateTime()}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className='bg-white rounded-xl w-full max-w-md p-6 relative animate-fade-in'
+        className='bg-white rounded-xl w-full max-w-md p-6 relative'
       >
         <button
           onClick={close}
@@ -156,11 +156,10 @@ Date: ${getCurrentDateTime()}
                 name='email'
                 type='email'
                 required
-                placeholder='Email address'
+                placeholder='Email'
                 className='w-full border p-3 rounded'
                 value={form.email}
                 onChange={handleChange}
-                pattern='^[^\s@]+@[^\s@]+\.[^\s@]+$'
               />
 
               <input
@@ -171,21 +170,33 @@ Date: ${getCurrentDateTime()}
                 className='w-full border p-3 rounded'
                 value={form.phone}
                 onChange={handleChange}
-                pattern='[6-9]{1}[0-9]{9}'
                 maxLength='10'
               />
 
-              <input
-                name='quantity'
-                type='number'
-                min='1'
-                max='10'
-                required
-                placeholder='Number of Tickets'
-                className='w-full border p-3 rounded'
-                value={form.quantity}
-                onChange={handleChange}
-              />
+              {/* Quantity selector */}
+              <div className='flex items-center gap-3'>
+                <button
+                  type='button'
+                  onClick={decreaseQty}
+                  className='w-10 h-10 bg-gray-200 rounded text-xl font-bold'
+                >
+                  −
+                </button>
+
+                <input
+                  readOnly
+                  value={form.quantity}
+                  className='w-full border p-3 rounded text-center font-bold'
+                />
+
+                <button
+                  type='button'
+                  onClick={increaseQty}
+                  className='w-10 h-10 bg-gray-200 rounded text-xl font-bold'
+                >
+                  +
+                </button>
+              </div>
 
               <input
                 value={form.event}
@@ -212,14 +223,11 @@ Date: ${getCurrentDateTime()}
             </form>
           </>
         ) : (
-          <div className='text-center py-10 space-y-4'>
+          <div className='text-center py-10'>
             <h2 className='text-2xl font-bold text-green-600'>
               Booking Successful!
             </h2>
-            <p>We have received your booking request.</p>
-            <p className='text-sm text-gray-600'>
-              We will contact you shortly.
-            </p>
+            <p>We will contact you shortly.</p>
 
             <button
               onClick={close}

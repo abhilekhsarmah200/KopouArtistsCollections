@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, X, Linkedin, Youtube } from 'lucide-react';
+import { Facebook, Instagram, X, Linkedin, Youtube, SendIcon } from 'lucide-react';
 import GovtRegistrationBadge from './GovtRegistrate/GovtRegistrationBadge';
 
 export default function Footer() {
@@ -148,6 +148,22 @@ export default function Footer() {
               Abhilekh Sarmah
             </a> */}
           </div>
+          <p className='text-background/70 text-sm text-center'>
+            Developed by{' '}
+            <a
+              href='http://designwithcode.in'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex'
+            >
+              <b className='text-green-600'>Design</b>{' '}
+              <b className='text-orange-600'>With</b>{' '}
+              <b className='text-blue-600'>Code</b>{' '}
+              <sup>
+                <SendIcon className='h-4' />
+              </sup>
+            </a>
+          </p>
           <GovtRegistrationBadge />
         </div>
       </div>

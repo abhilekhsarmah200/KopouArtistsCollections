@@ -148,7 +148,7 @@ export default function Footer() {
               Abhilekh Sarmah
             </a> */}
           </div>
-          <p className='text-background/70 text-sm text-center'>
+          <p className='text-[#c23c23] text-sm text-center'>
             Developed by{' '}
             <a
               href='http://designwithcode.in'

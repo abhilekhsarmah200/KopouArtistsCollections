@@ -15,12 +15,12 @@ export default function WordsFromFounder() {
       position: 'Creative-Founder',
       img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1763823350/KopouArtistsCollectionsIcon/KopouTeam/aos1qthjjw3eeqmojhid.webp',
     },
-    {
-      id: 3,
-      author: 'Abhilekh Sarmah',
-      position: 'Web Developer',
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762173219/KopouArtistsCollectionsIcon/KopouTeam/qm2kt2u1ztcxuf1nd7n9.webp',
-    },
+    // {
+    //   id: 3,
+    //   author: 'Abhilekh Sarmah',
+    //   position: 'Web Developer',
+    //   img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762173219/KopouArtistsCollectionsIcon/KopouTeam/qm2kt2u1ztcxuf1nd7n9.webp',
+    // },
     {
       id: 4,
       author: 'Velentina Gogoi',

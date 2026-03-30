@@ -21,12 +21,12 @@ export default function WordsFromFounder() {
     //   position: 'Web Developer',
     //   img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762173219/KopouArtistsCollectionsIcon/KopouTeam/qm2kt2u1ztcxuf1nd7n9.webp',
     // },
-    {
-      id: 4,
-      author: 'Velentina Gogoi',
-      position: 'Social Media Associate',
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172554/KopouArtistsCollectionsIcon/KopouTeam/w5e67aofxbjp3a4bfdij.webp',
-    },
+    // {
+    //   id: 4,
+    //   author: 'Velentina Gogoi',
+    //   position: 'Social Media Associate',
+    //   img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762172554/KopouArtistsCollectionsIcon/KopouTeam/w5e67aofxbjp3a4bfdij.webp',
+    // },
     {
       id: 5,
       author: 'Shiva Dey',
@@ -39,12 +39,12 @@ export default function WordsFromFounder() {
       position: 'Video Editor',
       img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762186012/KopouArtistsCollectionsIcon/KopouTeam/dww2dcjevnvzyrvj1hyf.webp',
     },
-    {
-      id: 7,
-      author: 'Prastuti Das',
-      position: 'Content Creator',
-      img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762441598/KopouArtistsCollectionsIcon/Webp/f5w9j4x9b752vm2erv72.webp',
-    },
+    // {
+    //   id: 7,
+    //   author: 'Prastuti Das',
+    //   position: 'Content Creator',
+    //   img: 'https://res.cloudinary.com/dwkajs0ca/image/upload/v1762441598/KopouArtistsCollectionsIcon/Webp/f5w9j4x9b752vm2erv72.webp',
+    // },
   ];
   return (
     <div
